@@ -1,10 +1,221 @@
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background-color: #073b4c;
+  color: white;
+  padding: 7rem;
+  align-items: flex-start;
+}
+
+.welcome {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+.parallax,
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5,
+.parallax6,
+.parallax7,
+.parallax8 {
+  /* The image used */
+  background-image: url("/images/animation_1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  background-image: url("/images/animation_2.jpg");
+}
+.parallax3 {
+  background-image: url("/images/animation_3.jpg");
+}
+.parallax4 {
+  background-image: url("/images/animation_4.jpg");
+}
+.parallax5 {
+  background-image: url("/images/animation_5.jpg");
+}
+.parallax6 {
+  background-image: url("/images/animation_6.jpg");
+}
+.parallax7 {
+  background-image: url("/images/animation_7.jpg");
+}
+.parallax8 {
+  background-image: url("/images/animation_8.jpg");
+}
+
+.testDiv,
+.testDiv2,
+.testDiv3,
+.testDiv4,
+.testDiv5,
+.testDiv6,
+.testDiv7,
+.testDiv8 {
+  height: 400px;
+  background-color: #118ab2;
+  color: white;
+  padding: 50px;
+  box-shadow: 0 0 2rem -0.5rem #000000;
+}
+.testDiv2,
+.testDiv7 {
+  background-color: #06d6a0;
+  color: white;
+}
+.testDiv3,
+.testDiv8 {
+  background-color: #ffd166;
+  color: black;
+}
+.testDiv4 {
+  background-color: #ef476f;
+  color: white;
+}
+.testDiv5 {
+  background-color: #073b4c;
+  color: white;
+}
+.bio {
+  display: flex;
+}
+.bioPic {
+  width: 200px;
+  height: fit-content;
+  margin-right: 31px;
+}
+.header {
+  background-color: #073b4c;
+  color: white;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  /*  height: var(--nav-height);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
+}
+.nav {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  /*   color: var(--lightest-slate);
+  font-family: var(--font-mono);
+  counter-reset: item 0; */
+  z-index: 12;
+}
+.ol {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.li {
+  margin: 0px 5px;
+  position: relative;
+  /*counter-increment: item 1;
+  font-size: var(--fz-xs);
+  */
+}
+.li:nth-child(1) {
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  -ms-animation: fadeIn 1.5s;
+}
+.li:nth-child(2) {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+.li:nth-child(3) {
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+}
+.li:nth-child(4) {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+.li:nth-child(5) {
+  animation: fadeIn 3.5s;
+  -webkit-animation: fadeIn 3.5s;
+  -moz-animation: fadeIn 3.5s;
+  -o-animation: fadeIn 3.5s;
+  -ms-animation: fadeIn 3.5s;
+}
+.iconContainer {
+  text-align: center;
+  padding: 10px;
+  background-color: #00000045;
+  border-radius: 10px;
+}
+.icon {
+  width: 60px;
+  margin: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logo {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 15px;
+}
+.navLinks {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
 }

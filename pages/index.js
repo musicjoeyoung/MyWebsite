@@ -63,9 +63,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className="word"></div>
         <h1>Joseph M. Young</h1>
-        <div className="homePagesContainer">
-          <a href="/homePage">Software Engineer</a>
-          <a href="homePage2">Musician</a>
+        <div className={styles.homePagesContainer}>
+          <a className={styles.glowOnHover} href="/homePage">
+            Software Engineer
+          </a>
+          <a className={styles.glowOnHover} href="homePage2">
+            Musician
+          </a>
         </div>
       </main>
       <style jsx>{`
