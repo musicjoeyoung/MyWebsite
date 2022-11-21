@@ -29,6 +29,7 @@ const Weather = () => {
               type="text"
               placeholder="Search by City"
               className={styles.input}
+              autoComplete="on"
             />
           </div>
           <button onClick={fetchWeather}>Search</button>

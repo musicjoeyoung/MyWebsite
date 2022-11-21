@@ -13,7 +13,9 @@ const homePage = () => {
           </div>
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
-              <li className={styles.li}>About</li>
+              <li className={styles.li}>
+                <a href="#bio">About</a>
+              </li>
               <li className={styles.li}>Projects</li>
               <li className={styles.li}>Resume</li>
               <li className={styles.li}>About</li>
@@ -24,7 +26,7 @@ const homePage = () => {
       </header>
       <div className={styles.main}>
         <h2 className={styles.welcome}>Hello, my name is </h2>
-        <h1 className={styles.welcome} style={{ "font-size": "60px" }}>
+        <h1 className={styles.welcome} style={{ fontSize: "60px" }}>
           Joseph Young{" "}
         </h1>
         <p className={styles.welcome}>
@@ -34,7 +36,7 @@ const homePage = () => {
         </p>
       </div>
       <div className={styles.parallax}></div>
-      <div className={styles.testDiv}>
+      <div className={styles.testDiv} id="bio">
         <h2>About Me</h2>
         <div className={styles.bio}>
           <img className={styles.bioPic} src={"/images/Joe.png"} />
@@ -99,15 +101,38 @@ const homePage = () => {
       </div>
       <div className={styles.parallax3}></div>
       <div className={styles.testDiv3}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
+        <h2>Weather App</h2>
+        <div className={styles.projectImgContainer}>
+          <img className={styles.projectImg} src="./images/WeatherApp.png" />
+        </div>
+        <p>
+          Built within this website, this weather app makes use of the
+          OpenWeather API.
+        </p>
+        <a href="/weather">Click here to view.</a>
       </div>
       <div className={styles.parallax4}></div>
       <div className={styles.testDiv4}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
+        <h2>Aether</h2>
+        <div className={styles.projectImgContainer}>
+          <img className={styles.projectImg} src="./images/Aether.png" />
+        </div>
+        <p>
+          Built as a final capstone project at the Fullstack Academy, this is an
+          audio-visual music collaboration experience. Our goal was to create a
+          loosely structured audio visual “jam” space for users to compose and
+          visualize music with a variety of instruments collaboratively in a
+          live session. When collaborative art cannot be made in-person, this
+          application can bring people together in a creative environment. This
+          space serves as a tool to make music in a live 3-D session.
+          <br />
+          <br />
+          Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
+          Redux, Express, Framer/Framer-Motion
+        </p>
+        <a href="https://github.com/musicjoeyoung/aether">Github</a>
+        <br />
+        <a href="https://aether-leo.herokuapp.com/sesh">Live link</a>
       </div>
       <div className={styles.parallax5}></div>
       <div className={styles.testDiv5}>

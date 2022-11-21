@@ -12,11 +12,11 @@
 }
 
 .welcome {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .parallax,
@@ -69,7 +69,8 @@
 .testDiv6,
 .testDiv7,
 .testDiv8 {
-  height: 400px;
+  min-height: 400px;
+  max-height: 100%;
   background-color: #118ab2;
   color: white;
   padding: 50px;
@@ -153,39 +154,39 @@
   */
 }
 .li:nth-child(1) {
-  animation: fadeIn 1.5s;
-  -webkit-animation: fadeIn 1.5s;
-  -moz-animation: fadeIn 1.5s;
-  -o-animation: fadeIn 1.5s;
-  -ms-animation: fadeIn 1.5s;
-}
-.li:nth-child(2) {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-}
-.li:nth-child(3) {
   animation: fadeIn 2.5s;
   -webkit-animation: fadeIn 2.5s;
   -moz-animation: fadeIn 2.5s;
   -o-animation: fadeIn 2.5s;
   -ms-animation: fadeIn 2.5s;
 }
-.li:nth-child(4) {
+.li:nth-child(2) {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
 }
-.li:nth-child(5) {
+.li:nth-child(3) {
   animation: fadeIn 3.5s;
   -webkit-animation: fadeIn 3.5s;
   -moz-animation: fadeIn 3.5s;
   -o-animation: fadeIn 3.5s;
   -ms-animation: fadeIn 3.5s;
+}
+.li:nth-child(4) {
+  animation: fadeIn 4s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+  -o-animation: fadeIn 4s;
+  -ms-animation: fadeIn 4s;
+}
+.li:nth-child(5) {
+  animation: fadeIn 4.5s;
+  -webkit-animation: fadeIn 4.5s;
+  -moz-animation: fadeIn 4.5s;
+  -o-animation: fadeIn 4.5s;
+  -ms-animation: fadeIn 4.5s;
 }
 .iconContainer {
   text-align: center;
@@ -196,6 +197,17 @@
 .icon {
   width: 60px;
   margin: 10px;
+}
+
+.projectImg {
+  width: 100%;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.projectImgContainer {
+  text-align: center;
 }
 
 @keyframes fadeIn {
