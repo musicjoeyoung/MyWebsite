@@ -75,6 +75,7 @@
   color: white;
   padding: 50px;
   box-shadow: 0 0 2rem -0.5rem #000000;
+  scroll-margin-top: 80px;
 }
 .testDiv2,
 .testDiv7 {
@@ -101,6 +102,9 @@
   width: 200px;
   height: fit-content;
   margin-right: 31px;
+}
+.bioP {
+  margin-top: 0px;
 }
 .header {
   background-color: #073b4c;
@@ -141,7 +145,7 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  align-items: center;
+  align-items: flex-end;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -210,6 +214,11 @@
   text-align: center;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -230,4 +239,113 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+}
+.glowOnHover {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #00000000;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 35px;
+  padding: 15px;
+  text-align: center;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  /* margin: 20px; */
+}
+
+.glowOnHover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #118ab2,
+    #06d6a0,
+    #ffd166,
+    #ef476f,
+    #073b4c
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.glowOnHover:active {
+  color: #000;
+}
+
+.glowOnHover:active:after {
+  background: transparent;
+}
+
+.glowOnHover:hover:before {
+  opacity: 1;
+}
+
+.glowOnHover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #111111b5; */
+  left: 0;
+  top: 0;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .nav {
+    display: none;
+  }
+  .parallax,
+  .parallax2,
+  .parallax3,
+  .parallax4,
+  .parallax5,
+  .parallax6,
+  .parallax7,
+  .parallax8 {
+    background-attachment: initial;
+  }
+}
+
+@media (max-width: 646px) {
+  .navLinks {
+    margin-top: 17px;
+  }
 }

@@ -1,4 +1,6 @@
 import styles from "../styles/homePage.module.css";
+import HamburgerMenu from "./components/HamburgerMenu";
+import UpArrow from "./components/UpArrow";
 
 const homePage = () => {
   return (
@@ -14,15 +16,28 @@ const homePage = () => {
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
-                <a href="#bio">About</a>
+                <a href="#bio" className={styles.glowOnHover}>
+                  About
+                </a>
               </li>
-              <li className={styles.li}>Projects</li>
-              <li className={styles.li}>Resume</li>
-              <li className={styles.li}>About</li>
-              <li className={styles.li}>About</li>
+              <li className={styles.li}>
+                <a href="#projects" className={styles.glowOnHover}>
+                  Projects
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.glowOnHover}>Resume</a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.glowOnHover}>About</a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.glowOnHover}>Contact</a>
+              </li>
             </ol>
           </div>
         </nav>
+        <HamburgerMenu />
       </header>
       <div className={styles.main}>
         <h2 className={styles.welcome}>Hello, my name is </h2>
@@ -40,7 +55,7 @@ const homePage = () => {
         <h2>About Me</h2>
         <div className={styles.bio}>
           <img className={styles.bioPic} src={"/images/Joe.png"} />
-          <p>
+          <p className={styles.bioP}>
             As a software engineer and graduate of the Fullstack Academy
             Software Engineering Immersive program, I love to problem-solve,
             design, debug, test, and build various types of applications. I'm
@@ -100,7 +115,7 @@ const homePage = () => {
         </div>
       </div>
       <div className={styles.parallax3}></div>
-      <div className={styles.testDiv3}>
+      <div className={styles.testDiv3} id="projects">
         <h2>Weather App</h2>
         <div className={styles.projectImgContainer}>
           <img className={styles.projectImg} src="./images/WeatherApp.png" />
@@ -109,7 +124,15 @@ const homePage = () => {
           Built within this website, this weather app makes use of the
           OpenWeather API.
         </p>
-        <a href="/weather">Click here to view.</a>
+        <div className={styles.links}>
+          <a
+            href="/weather"
+            className={styles.glowOnHover}
+            style={{ color: "black" }}
+          >
+            Click here to view
+          </a>
+        </div>
       </div>
       <div className={styles.parallax4}></div>
       <div className={styles.testDiv4}>
@@ -130,15 +153,40 @@ const homePage = () => {
           Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
           Redux, Express, Framer/Framer-Motion
         </p>
-        <a href="https://github.com/musicjoeyoung/aether">Github</a>
-        <br />
-        <a href="https://aether-leo.herokuapp.com/sesh">Live link</a>
+        <div className={styles.links}>
+          <a href="https://github.com/musicjoeyoung/aether">Github</a>
+          <a
+            href="https://aether-leo.herokuapp.com/sesh"
+            className={styles.glowOnHover}
+          >
+            Click here to view
+          </a>
+        </div>
       </div>
       <div className={styles.parallax5}></div>
       <div className={styles.testDiv5}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
+        <h2>Music Memory</h2>
+        <div className={styles.projectImgContainer}>
+          <img className={styles.projectImg} src="./images/MusicMemory.png" />
+        </div>
+        <p>
+          A hackathon challenge by Mintbean.io with a short turnaround, my goal
+          was to make a game that tests the user's ability to remember and
+          playback different arrangements of pitches and also strengthen their
+          tonal and visual memory.
+        </p>
+        <div className={styles.links}>
+          <a href="https://github.com/musicjoeyoung/MusicMemoryGame">Github</a>
+          <a href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35">
+            Medium Article
+          </a>
+          <a
+            href="https://music-memory-game.herokuapp.com/"
+            className={styles.glowOnHover}
+          >
+            Click here to view
+          </a>
+        </div>
       </div>
       <div className={styles.parallax6}></div>
       <div className={styles.testDiv6}>
@@ -158,6 +206,7 @@ const homePage = () => {
         div is just here to enable scrolling. Tip: Try to remove the
         background-attachment property to remove the scrolling effect.
       </div>
+      <UpArrow />
     </>
   );
 };
