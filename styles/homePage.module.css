@@ -31,7 +31,7 @@
   background-image: url("/images/animation_1.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -197,6 +197,7 @@
   padding: 10px;
   background-color: #00000045;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .icon {
   width: 60px;
@@ -217,6 +218,10 @@
 .links {
   display: flex;
   flex-direction: column;
+}
+.links .glowOnHover {
+  height: 30px;
+  padding: 3px;
 }
 
 @keyframes fadeIn {
@@ -349,3 +354,4 @@
     margin-top: 17px;
   }
 }
+/* h 30 pad 3 */
