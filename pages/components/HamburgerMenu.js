@@ -6,6 +6,11 @@ const HamburgerMenu = () => {
       <img src="./images/dropdown.png" className={styles.dropdownbtn} />
       <div className={styles.dropdownContent}>
         <li className={styles.li}>
+          <a href="/" className={styles.glowOnHover}>
+            Home
+          </a>
+        </li>
+        <li className={styles.li}>
           <a href="#bio">About</a>
         </li>
         <li className={styles.li}>
@@ -13,9 +18,6 @@ const HamburgerMenu = () => {
         </li>
         <li className={styles.li}>
           <a>Resume</a>
-        </li>
-        <li className={styles.li}>
-          <a>About</a>
         </li>
         <li className={styles.li}>
           <a>Contact</a>

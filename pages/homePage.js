@@ -16,6 +16,11 @@ const homePage = () => {
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
+                <a href="/" className={styles.glowOnHover}>
+                  Home
+                </a>
+              </li>
+              <li className={styles.li}>
                 <a href="#bio" className={styles.glowOnHover}>
                   About
                 </a>
@@ -27,9 +32,6 @@ const homePage = () => {
               </li>
               <li className={styles.li}>
                 <a className={styles.glowOnHover}>Resume</a>
-              </li>
-              <li className={styles.li}>
-                <a className={styles.glowOnHover}>About</a>
               </li>
               <li className={styles.li}>
                 <a className={styles.glowOnHover}>Contact</a>
@@ -154,7 +156,12 @@ const homePage = () => {
           Redux, Express, Framer/Framer-Motion
         </p>
         <div className={styles.links}>
-          <a href="https://github.com/musicjoeyoung/aether">Github</a>
+          <a
+            href="https://github.com/musicjoeyoung/aether"
+            className={styles.glowOnHover}
+          >
+            Github
+          </a>
           <a
             href="https://aether-leo.herokuapp.com/sesh"
             className={styles.glowOnHover}
@@ -176,8 +183,16 @@ const homePage = () => {
           tonal and visual memory.
         </p>
         <div className={styles.links}>
-          <a href="https://github.com/musicjoeyoung/MusicMemoryGame">Github</a>
-          <a href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35">
+          <a
+            href="https://github.com/musicjoeyoung/MusicMemoryGame"
+            className={styles.glowOnHover}
+          >
+            Github
+          </a>
+          <a
+            href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
+            className={styles.glowOnHover}
+          >
             Medium Article
           </a>
           <a
