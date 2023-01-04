@@ -1,6 +1,8 @@
 import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import UpArrow from "./components/UpArrow";
+import Contact from "./components/Contact.js";
+import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
   return (
@@ -11,7 +13,7 @@ const homePage = () => {
             <a href="/">
               <img src={"favicon.ico"} />
             </a>
-            <title>logo</title>
+            <title>Joseph Young</title>
           </div>
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
@@ -31,7 +33,9 @@ const homePage = () => {
                 </a>
               </li>
               <li className={styles.li}>
-                <a className={styles.glowOnHover}>Resume</a>
+                <a href="#resume" className={styles.glowOnHover}>
+                  Resume
+                </a>
               </li>
               <li className={styles.li}>
                 <a className={styles.glowOnHover}>Contact</a>
@@ -114,6 +118,10 @@ const homePage = () => {
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
           />
+          <img
+            className={styles.icon}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
+          />
         </div>
       </div>
       <div className={styles.parallax3}></div>
@@ -128,7 +136,26 @@ const homePage = () => {
         </p>
         <div className={styles.links}>
           <a
-            href="/weather"
+            href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/weather.js"
+            className={styles.glowOnHover}
+            style={{ color: "black" }}
+          >
+            Github (function)
+          </a>
+        </div>
+        <div className={styles.links}>
+          <a
+            href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/ShowWeather.js"
+            className={styles.glowOnHover}
+            style={{ color: "black" }}
+          >
+            Github (component)
+          </a>
+        </div>
+
+        <div className={styles.links}>
+          <a
+            href="/components/weather/weather"
             className={styles.glowOnHover}
             style={{ color: "black" }}
           >
@@ -203,17 +230,31 @@ const homePage = () => {
           </a>
         </div>
       </div>
+
       <div className={styles.parallax6}></div>
       <div className={styles.testDiv6}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
+        <h2>Calculator</h2>
+        <Calculator />
       </div>
       <div className={styles.parallax7}></div>
-      <div className={styles.testDiv7}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
+      <div className={styles.testDiv7} id="resume">
+        {" "}
+        <h2>Resume</h2>
+        <p>
+          Please find my resume information at{" "}
+          <a href="https://www.linkedin.com/in/joseph-m-young/">LinkedIn</a>.
+        </p>
+        <h2>Education</h2>
+        <ul>
+          <li>
+            Fullstack Academy - Software Engineering Immersive program - 2021
+          </li>
+          <li>Hunter College - MA, Music Composition - 2019</li>
+          <li>
+            Ball State University - Bachelor of Arts, Emphasis in Music
+            Education - 2014
+          </li>
+        </ul>
       </div>
       <div className={styles.parallax8}></div>
       <div className={styles.testDiv8}>
