@@ -1,4 +1,5 @@
 import styles from "/styles/HamburgerMenu.module.css";
+import Link from "next/link";
 
 const HamburgerMenu = () => {
   return (
@@ -6,21 +7,19 @@ const HamburgerMenu = () => {
       <img src="./images/dropdown.png" className={styles.dropdownbtn} />
       <div className={styles.dropdownContent}>
         <li className={styles.li}>
-          <a href="/" className={styles.glowOnHover}>
-            Home
-          </a>
+          <Link className={styles.glowOnHover}>Home</Link>
         </li>
         <li className={styles.li}>
-          <a href="#bio">About</a>
+          <Link href="#bio">About</Link>
         </li>
         <li className={styles.li}>
-          <a href="#projects">Projects</a>
+          <Link href="#projects">Projects</Link>
         </li>
         <li className={styles.li}>
-          <a href="#resume">Resume</a>
+          <Link href="#resume">Resume</Link>
         </li>
         <li className={styles.li}>
-          <a href="#contact">Contact</a>
+          <Link href="#contact">Contact</Link>
         </li>
       </div>
     </div>

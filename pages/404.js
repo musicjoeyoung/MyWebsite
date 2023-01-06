@@ -1,13 +1,14 @@
 import styles from "../styles/404.module.css";
+import Link from "next/link";
 
 export default function Custom404() {
   return (
     <>
       <h1 className={styles.h1}>
-        Sorry! It looks like this page doesn't exist! Click{" "}
-        <a className={styles.a} href="/">
+        Sorry! It looks like this page doesn&apos;t exist! Click{" "}
+        <Link className={styles.a} href="/">
           here
-        </a>{" "}
+        </Link>{" "}
         to go back home!
       </h1>
     </>
