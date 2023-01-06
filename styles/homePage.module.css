@@ -192,6 +192,9 @@
   -o-animation: fadeIn 4.5s;
   -ms-animation: fadeIn 4.5s;
 }
+.ul {
+  line-height: 22px;
+}
 .iconContainer {
   text-align: center;
   padding: 10px;
@@ -346,6 +349,10 @@
   .parallax7,
   .parallax8 {
     background-attachment: initial;
+  }
+  .bio {
+    display: flex;
+    flex-direction: column;
   }
 }
 

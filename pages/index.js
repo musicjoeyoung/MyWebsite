@@ -4,8 +4,10 @@ import $ from "jquery";
 
 let words = [
     " fullstack software engineer",
-    " musician, composer, performer",
+    " javascript, jQuery, CSS, HTML",
     " pretty cool guy",
+    /*  " musician, composer, performer",
+    " pretty cool guy", */
   ],
   part,
   i = 0,
@@ -65,11 +67,11 @@ export default function Home() {
         <h1>Joseph M. Young</h1>
         <div className={styles.homePagesContainer}>
           <a className={styles.glowOnHover} href="/homePage">
-            Software Engineer
+            Enter
           </a>
-          <a className={styles.glowOnHover} href="homePage2">
+          {/*           <a className={styles.glowOnHover} href="homePage2">
             Musician
-          </a>
+          </a> */}
         </div>
       </main>
       <style jsx>{`
