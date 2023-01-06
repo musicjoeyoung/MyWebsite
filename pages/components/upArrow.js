@@ -16,7 +16,7 @@ const UpArrow = () => {
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.pageYOffset > 500) {
+      if (window.pageYOffset > 1000) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -30,7 +30,7 @@ const UpArrow = () => {
 
   //scroll-to-top classes: fixed, bottom:0, right:0
   return (
-    <div className="scroll-to-top">
+    <div className={styles.scrollToTop}>
       {isVisible && (
         <div onClick={scrollToTop} className={styles.upContainer}>
           <img src="../images/UpIconArrow.png" className={styles.img} />

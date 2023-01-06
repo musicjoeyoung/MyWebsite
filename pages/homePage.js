@@ -2,7 +2,7 @@ import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import UpArrow from "./components/UpArrow";
 import Contact from "./components/Contact.js";
-import Calculator from "./components/calculator/Calculator";
+//import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
   return (
@@ -15,6 +15,7 @@ const homePage = () => {
             </a>
             <title>Joseph Young</title>
           </div>
+          {/* NavBar */}
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
@@ -38,7 +39,9 @@ const homePage = () => {
                 </a>
               </li>
               <li className={styles.li}>
-                <a className={styles.glowOnHover}>Contact</a>
+                <a href="#contact" className={styles.glowOnHover}>
+                  Contact
+                </a>
               </li>
             </ol>
           </div>
@@ -57,6 +60,7 @@ const homePage = () => {
         </p>
       </div>
       <div className={styles.parallax}></div>
+      {/* Bio */}
       <div className={styles.testDiv} id="bio">
         <h2>About Me</h2>
         <div className={styles.bio}>
@@ -66,15 +70,23 @@ const homePage = () => {
             Software Engineering Immersive program, I love to problem-solve,
             design, debug, test, and build various types of applications. I'm
             passionate about learning and implementing web accessibility
-            standards into everything I do. <br /> <br />
-            Currently, I help build and maintain ad campaigns for{" "}
-            <a href="https://www.wunderkind.co/">Wunderkind</a>, a performance
-            marketing channel that delivers one-to-one messages across email and
-            text at an unmatched scale.
+            standards into everything I do.
+            <br />
+            <br />
+            I have helped build and deploy efficient and user-friendly marketing
+            campaigns for hundreds of major companies, a performance marketing
+            channel that delivers one-to-one messages across email and text at
+            an unmatched scale.
+            <br />
+            <br />I have also collaborated on both e-commerce websites with full
+            user-authorization structures and attractive user interface, as well
+            as interactive, multi-user web spaces with polished front-end
+            designs.
           </p>
         </div>
       </div>
       <div className={styles.parallax2}></div>
+      {/* Tech */}
       <div className={styles.testDiv2}>
         Languages and Tools I use:
         <div className={styles.iconContainer}>
@@ -125,6 +137,7 @@ const homePage = () => {
         </div>
       </div>
       <div className={styles.parallax3}></div>
+      {/* Projects */}
       <div className={styles.testDiv3} id="projects">
         <h2>Weather App</h2>
         <div className={styles.projectImgContainer}>
@@ -136,20 +149,11 @@ const homePage = () => {
         </p>
         <div className={styles.links}>
           <a
-            href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/weather.js"
+            href="https://github.com/musicjoeyoung/MyWebsite/tree/main/pages/components/weather"
             className={styles.glowOnHover}
             style={{ color: "black" }}
           >
-            Github (function)
-          </a>
-        </div>
-        <div className={styles.links}>
-          <a
-            href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/ShowWeather.js"
-            className={styles.glowOnHover}
-            style={{ color: "black" }}
-          >
-            Github (component)
+            Github
           </a>
         </div>
 
@@ -189,12 +193,12 @@ const homePage = () => {
           >
             Github
           </a>
-          <a
+          {/*           <a
             href="https://aether-leo.herokuapp.com/sesh"
             className={styles.glowOnHover}
           >
             Click here to view
-          </a>
+          </a> */}
         </div>
       </div>
       <div className={styles.parallax5}></div>
@@ -222,29 +226,80 @@ const homePage = () => {
           >
             Medium Article
           </a>
-          <a
+          {/*          <a
             href="https://music-memory-game.herokuapp.com/"
             className={styles.glowOnHover}
           >
             Click here to view
-          </a>
+          </a> */}
         </div>
       </div>
-
       <div className={styles.parallax6}></div>
-      <div className={styles.testDiv6}>
-        <h2>Calculator</h2>
-        <Calculator />
-      </div>
-      <div className={styles.parallax7}></div>
-      <div className={styles.testDiv7} id="resume">
-        {" "}
+      {/* Resume */}
+      <div className={styles.testDiv6} id="resume">
         <h2>Resume</h2>
-        <p>
-          Please find my resume information at{" "}
-          <a href="https://www.linkedin.com/in/joseph-m-young/">LinkedIn</a>.
-        </p>
-        <h2>Education</h2>
+
+        <h3>Experience</h3>
+        <ul className={styles.ul}>
+          <li>
+            Wunderkind – Software Engineer - 2022-2023
+            <ul>
+              <li>
+                Successfully integrated internal platform with client campaigns
+                with vanilla JavaScript and in-house tools while writing
+                maintainable, reliable, scalable, and testable code.
+              </li>
+              <li>
+                Maintained existing APIs and built out new functionality to
+                communicate efficiently with clients.
+              </li>
+              <li>
+                Reviewed for peers as well assisted in assessment of tools and
+                resources for web accessibility implementation.
+              </li>
+              <li>
+                Utilized and improved proficiency in JavaScript, HTML, CSS, and
+                jQuery by creating and implementing elegant user-facing
+                campaigns for hundreds of well-known web services.
+              </li>
+            </ul>
+          </li>
+          <li>
+            New York Public Radio - Front Office Administration/Production
+            Assistant - 2017-2022
+            <ul>
+              <li>
+                Maintained security and conducted administrative tasks at the
+                reception desk
+              </li>
+              <li>
+                Assisted in preparation and production of scripts and content
+                for WQXR’s Carnegie Hall Live broadcasts.
+              </li>
+            </ul>
+          </li>
+          <li>
+            US Army, Reserves - Soldier/Executive Officer/Musician/Webmaster -
+            2004-current
+            <ul>
+              <li>
+                Serves as a Warrant Officer, responsible for management and
+                well-being of a 50+ person team in all aspects related to HR,
+                finance, and training.
+              </li>
+              <li>
+                Program, produces, and musically performs 100+ community and
+                training events in the tri-state area.
+              </li>
+              <li>
+                Builds, develops, and maintains the 78th Army Band website in
+                order to provide a tool for the civilian community to connect
+                and access the unit’s social media resources.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3>Education</h3>
         <ul>
           <li>
             Fullstack Academy - Software Engineering Immersive program - 2021
@@ -255,13 +310,24 @@ const homePage = () => {
             Education - 2014
           </li>
         </ul>
+
+        <div className={styles.links}>
+          <a
+            href="https://www.linkedin.com/in/joseph-m-young/"
+            className={styles.glowOnHover}
+            /* style={{ color: "black" }} */
+          >
+            You may also find my resume information at LinkedIn.
+          </a>
+        </div>
+      </div>
+      <div className={styles.parallax7}></div>
+      {/* Contact */}
+      <div className={styles.testDiv7} id="contact">
+        <Contact />
       </div>
       <div className={styles.parallax8}></div>
-      <div className={styles.testDiv8}>
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
-      </div>
+      <div className={styles.testDiv8}>Thanks for visiting!</div>
       <UpArrow />
     </>
   );

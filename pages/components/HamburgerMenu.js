@@ -17,10 +17,10 @@ const HamburgerMenu = () => {
           <a href="#projects">Projects</a>
         </li>
         <li className={styles.li}>
-          <a>Resume</a>
+          <a href="#resume">Resume</a>
         </li>
         <li className={styles.li}>
-          <a>Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </div>
     </div>
