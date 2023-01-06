@@ -1,4 +1,5 @@
 import styles from "../styles/homePage2.module.css";
+import Link from "next/link";
 
 const homePage2 = () => {
   return (
@@ -7,7 +8,7 @@ const homePage2 = () => {
         <h1>musician</h1>
         Ideas: Have this page be one of those scrolling pages with pictures as
         background (different than the software engineering part?)
-        <a href="/">Home</a>
+        <Link href="/">Home</Link>
       </div>
     </>
   );

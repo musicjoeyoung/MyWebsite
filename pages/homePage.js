@@ -2,6 +2,7 @@ import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import UpArrow from "./components/UpArrow";
 import Contact from "./components/Contact.js";
+import Link from "next/link";
 //import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
@@ -10,38 +11,38 @@ const homePage = () => {
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <a href="/">
+            <Link href="/">
               <img src={"favicon.ico"} />
-            </a>
+            </Link>
             <title>Joseph Young</title>
           </div>
           {/* NavBar */}
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
-                <a href="/" className={styles.glowOnHover}>
+                <Link href="/" className={styles.glowOnHover}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a href="#bio" className={styles.glowOnHover}>
+                <Link href="#bio" className={styles.glowOnHover}>
                   About
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a href="#projects" className={styles.glowOnHover}>
+                <Link href="#projects" className={styles.glowOnHover}>
                   Projects
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a href="#resume" className={styles.glowOnHover}>
+                <Link href="#resume" className={styles.glowOnHover}>
                   Resume
-                </a>
+                </Link>
               </li>
               <li className={styles.li}>
-                <a href="#contact" className={styles.glowOnHover}>
+                <Link href="#contact" className={styles.glowOnHover}>
                   Contact
-                </a>
+                </Link>
               </li>
             </ol>
           </div>
@@ -68,9 +69,9 @@ const homePage = () => {
           <p className={styles.bioP}>
             As a software engineer and graduate of the Fullstack Academy
             Software Engineering Immersive program, I love to problem-solve,
-            design, debug, test, and build various types of applications. I'm
-            passionate about learning and implementing web accessibility
-            standards into everything I do.
+            design, debug, test, and build various types of applications.
+            I&apos;m passionate about learning and implementing web
+            accessibility standards into everything I do.
             <br />
             <br />
             I have helped build and deploy efficient and user-friendly marketing
@@ -148,23 +149,23 @@ const homePage = () => {
           OpenWeather API.
         </p>
         <div className={styles.links}>
-          <a
+          <Link
             href="https://github.com/musicjoeyoung/MyWebsite/tree/main/pages/components/weather"
             className={styles.glowOnHover}
             style={{ color: "black" }}
           >
             Github
-          </a>
+          </Link>
         </div>
 
         <div className={styles.links}>
-          <a
+          <Link
             href="/components/weather/weather"
             className={styles.glowOnHover}
             style={{ color: "black" }}
           >
             Click here to view
-          </a>
+          </Link>
         </div>
       </div>
       <div className={styles.parallax4}></div>
@@ -187,18 +188,18 @@ const homePage = () => {
           Redux, Express, Framer/Framer-Motion
         </p>
         <div className={styles.links}>
-          <a
+          <Link
             href="https://github.com/musicjoeyoung/aether"
             className={styles.glowOnHover}
           >
             Github
-          </a>
-          {/*           <a
+          </Link>
+          {/*           <Link
             href="https://aether-leo.herokuapp.com/sesh"
             className={styles.glowOnHover}
           >
             Click here to view
-          </a> */}
+          </Link> */}
         </div>
       </div>
       <div className={styles.parallax5}></div>
@@ -209,29 +210,29 @@ const homePage = () => {
         </div>
         <p>
           A hackathon challenge by Mintbean.io with a short turnaround, my goal
-          was to make a game that tests the user's ability to remember and
+          was to make a game that tests the user&apos;s ability to remember and
           playback different arrangements of pitches and also strengthen their
           tonal and visual memory.
         </p>
         <div className={styles.links}>
-          <a
+          <Link
             href="https://github.com/musicjoeyoung/MusicMemoryGame"
             className={styles.glowOnHover}
           >
             Github
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
             className={styles.glowOnHover}
           >
             Medium Article
-          </a>
-          {/*          <a
+          </Link>
+          {/*          <Link
             href="https://music-memory-game.herokuapp.com/"
             className={styles.glowOnHover}
           >
             Click here to view
-          </a> */}
+          </Link> */}
         </div>
       </div>
       <div className={styles.parallax6}></div>
@@ -312,13 +313,13 @@ const homePage = () => {
         </ul>
 
         <div className={styles.links}>
-          <a
+          <Link
             href="https://www.linkedin.com/in/joseph-m-young/"
             className={styles.glowOnHover}
             /* style={{ color: "black" }} */
           >
             You may also find my resume information at LinkedIn.
-          </a>
+          </Link>
         </div>
       </div>
       <div className={styles.parallax7}></div>

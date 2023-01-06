@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import $ from "jquery";
+import Link from "next/link";
 
 let words = [
     " fullstack software engineer",
@@ -66,9 +67,9 @@ export default function Home() {
         <div className="word"></div>
         <h1>Joseph M. Young</h1>
         <div className={styles.homePagesContainer}>
-          <a className={styles.glowOnHover} href="/homePage">
+          <Link className={styles.glowOnHover} href="/homePage">
             Enter
-          </a>
+          </Link>
           {/*           <a className={styles.glowOnHover} href="homePage2">
             Musician
           </a> */}
