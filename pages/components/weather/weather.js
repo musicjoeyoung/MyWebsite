@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import ShowWeather from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/pages/components/weather/ShowWeather.js";
+import ShowWeather from "./ShowWeather.js";
 import styles from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/styles/weather.module.css";
 
 const Weather = () => {

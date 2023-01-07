@@ -7,7 +7,9 @@ const HamburgerMenu = () => {
       <img src="./images/dropdown.png" className={styles.dropdownbtn} />
       <div className={styles.dropdownContent}>
         <li className={styles.li}>
-          <Link className={styles.glowOnHover}>Home</Link>
+          <Link href="/" className={styles.glowOnHover}>
+            Home
+          </Link>
         </li>
         <li className={styles.li}>
           <Link href="#bio">About</Link>
