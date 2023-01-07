@@ -1,6 +1,6 @@
 import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
-import UpArrow from "./components/upArrow";
+import UpArrow from "./components/UpArrow";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
