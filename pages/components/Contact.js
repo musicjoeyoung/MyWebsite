@@ -8,7 +8,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className={styles.container}>
         <h3>Questions? Comments?</h3>
-        {/* <Link href="mailto:musicjoeyoung@gmail.com">Email me!</Link> */}
+        <Link href="mailto:joseph.m.young2@gmail.com">Email me!</Link>
       </div>
     </div>
   );

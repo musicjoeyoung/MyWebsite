@@ -3,6 +3,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import UpArrow from "./components/upArrow";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
+import Image from "next/image";
 //import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
@@ -12,7 +13,7 @@ const homePage = () => {
         <nav className={styles.nav}>
           <div className={styles.logo}>
             <Link href="/">
-              <img src={"favicon.ico"} />
+              <Image src="/favicon.ico" alt="JY logo" width={50} height={50} />
             </Link>
             <title>Joseph Young</title>
           </div>
@@ -65,7 +66,13 @@ const homePage = () => {
       <div className={styles.testDiv} id="bio">
         <h2>About Me</h2>
         <div className={styles.bio}>
-          <img className={styles.bioPic} src={"/images/Joe.png"} />
+          <Image
+            className={styles.bioPic}
+            src="/images/Joe.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
           <p className={styles.bioP}>
             As a software engineer and graduate of the Fullstack Academy
             Software Engineering Immersive program, I love to problem-solve,
@@ -91,50 +98,83 @@ const homePage = () => {
       <div className={styles.testDiv2}>
         Languages and Tools I use:
         <div className={styles.iconContainer}>
-          <img
+          {/*  <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+            alt=""
+            width={60}
+            height={60}
           />
-          <img
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
-          />
+            alt=""
+            width={60}
+            height={60}
+          /> */}
         </div>
       </div>
       <div className={styles.parallax3}></div>
@@ -142,7 +182,13 @@ const homePage = () => {
       <div className={styles.testDiv3} id="projects">
         <h2>Weather App</h2>
         <div className={styles.projectImgContainer}>
-          <img className={styles.projectImg} src="./images/WeatherApp.png" />
+          <Image
+            className={styles.projectImg}
+            src="/images/WeatherApp.png"
+            alt="Picture of the project"
+            width={500}
+            height={300}
+          />
         </div>
         <p>
           Built within this website, this weather app makes use of the
@@ -172,7 +218,13 @@ const homePage = () => {
       <div className={styles.testDiv4}>
         <h2>Aether</h2>
         <div className={styles.projectImgContainer}>
-          <img className={styles.projectImg} src="./images/Aether.png" />
+          <Image
+            className={styles.projectImg}
+            src="/images/Aether.png"
+            alt="Picture of the project"
+            width={500}
+            height={500}
+          />
         </div>
         <p>
           Built as a final capstone project at the Fullstack Academy, this is an
@@ -206,7 +258,13 @@ const homePage = () => {
       <div className={styles.testDiv5}>
         <h2>Music Memory</h2>
         <div className={styles.projectImgContainer}>
-          <img className={styles.projectImg} src="./images/MusicMemory.png" />
+          <Image
+            className={styles.projectImg}
+            src="/images/MusicMemory.png"
+            alt="Picture of the project"
+            width={500}
+            height={500}
+          />
         </div>
         <p>
           A hackathon challenge by Mintbean.io with a short turnaround, my goal

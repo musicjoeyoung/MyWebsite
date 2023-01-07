@@ -1,10 +1,17 @@
 import styles from "/styles/HamburgerMenu.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const HamburgerMenu = () => {
   return (
     <div className={styles.hamburgerMenu}>
-      <img src="./images/dropdown.png" className={styles.dropdownbtn} />
+      <Image
+        src="/images/dropdown.png"
+        className={styles.dropdownbtn}
+        alt=""
+        width={35}
+        height={35}
+      />
       <div className={styles.dropdownContent}>
         <li className={styles.li}>
           <Link href="/" className={styles.glowOnHover}>
