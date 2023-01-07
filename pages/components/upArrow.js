@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/styles/upArrow.module.css";
+import Image from "next/image";
 
 const UpArrow = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +34,13 @@ const UpArrow = () => {
     <div className={styles.scrollToTop}>
       {isVisible && (
         <div onClick={scrollToTop} className={styles.upContainer}>
-          <img src="../images/UpIconArrow.png" className={styles.img} />
+          <Image
+            src="/images/UpIconArrow.png"
+            className={styles.img}
+            alt="Float up!"
+            width={60}
+            height={60}
+          />
           <h4>Float up!</h4>
         </div>
       )}

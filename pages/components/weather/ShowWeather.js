@@ -38,7 +38,7 @@ const ShowWeather = ({ data }) => {
       style={{
         background: "#00000099",
         border: "1px solid #0000004d",
-        "border-radius": "60px",
+        borderRadius: "60px",
         padding: "40px",
         margin: "0 auto",
       }}
