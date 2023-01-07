@@ -33,6 +33,17 @@ const ShowWeather = ({ data }) => {
   const fullDate = day + ", " + month + " " + date + ", " + year;
 
   console.log(data);
+  console.log(data.name);
+
+  let name = data.name === "New York";
+
+  if (data && data.name) {
+    // myObject is defined and has a 'name' property, so we can safely access it
+    console.log("data name", data.name);
+  } else {
+    // myObject is either null or undefined, or it doesn't have a 'name' property
+    console.log("data.name is not defined or does not have a name");
+  }
   return (
     <div
       style={{
@@ -45,7 +56,7 @@ const ShowWeather = ({ data }) => {
     >
       <p>{`${fullDate}`}</p>
       <div style={{ display: "flex" }}>
-        <h1>Weather in {data.name}</h1>
+        <h1>Weather in {name}</h1>
         <Image
           src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
           alt="/"
