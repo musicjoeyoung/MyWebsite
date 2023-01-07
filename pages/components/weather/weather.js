@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import ShowWeather from "./ShowWeather.js";
-import styles from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/styles/weather.module.css";
+import styles from "styles/weather.module.css";
 
 const Weather = () => {
   const [city, setCity] = useState("");
