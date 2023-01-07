@@ -1,4 +1,4 @@
-/* import axios from "axios";
+import axios from "axios";
 import { useState } from "react";
 import ShowWeather from "./ShowWeather.js";
 import styles from "styles/weather.module.css";
@@ -41,4 +41,3 @@ const Weather = () => {
 };
 
 export default Weather;
- */
