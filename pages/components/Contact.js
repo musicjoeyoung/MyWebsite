@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/styles/contact.module.css";
+import styles from "/styles/contact.module.css";
 import Link from "next/link";
 
 const Contact = () => {
