@@ -206,7 +206,7 @@ const homePage = () => {
 
         <div className={styles.links}>
           <Link
-            href="/components/weather/weather"
+            href="/components/weatherApp/weather"
             className={styles.glowOnHover}
             style={{ color: "black" }}
           >
