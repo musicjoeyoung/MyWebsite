@@ -74,22 +74,20 @@ const homePage = () => {
             height={500}
           />
           <p className={styles.bioP}>
-            As a software engineer and graduate of the Fullstack Academy
-            Software Engineering Immersive program, I love to problem-solve,
-            design, debug, test, and build various types of applications.
-            I&apos;m passionate about learning and implementing web
-            accessibility standards into everything I do.
+            I'm a software engineer with multiple years of experience coding,
+            debugging, testing, and troubleshooting in application development
+            processes. I work primarily in Javascript with HTML5, CSS3, React,
+            Redux, Node, Express, Sequelize, PostgreSQL, Babel, Webpack, OAuth,
+            and have a special interest in Web Accessiblity.
+            <br />
+            <br />I design and manage websites for a number of clients. In
+            addition to graduating from Fullstack Academy's Intensive Immersion
+            program, I have also earned certifications in Data Science with
+            Python from MIT via EdX.org.
             <br />
             <br />
-            I have helped build and deploy efficient and user-friendly marketing
-            campaigns for hundreds of major companies, a performance marketing
-            channel that delivers one-to-one messages across email and text at
-            an unmatched scale.
-            <br />
-            <br />I have also collaborated on both e-commerce websites with full
-            user-authorization structures and attractive user interface, as well
-            as interactive, multi-user web spaces with polished front-end
-            designs.
+            Fun Fact: I'm also in the Army Reserves where I'm an Executive
+            Officer for a military band, and we play lots of wonderful music!
           </p>
         </div>
       </div>
