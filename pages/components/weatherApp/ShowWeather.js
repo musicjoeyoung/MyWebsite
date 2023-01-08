@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import Image from "next/image";
 
 const ShowWeather = ({ data }) => {
@@ -32,10 +32,7 @@ const ShowWeather = ({ data }) => {
   const year = d.getFullYear();
   const fullDate = day + ", " + month + " " + date + ", " + year;
 
-  console.log(data);
-  console.log(data.name);
-
-  let name = data.name === "New York";
+  console.log("data from ShowWeather.js", data);
 
   if (data && data.name) {
     // myObject is defined and has a 'name' property, so we can safely access it
@@ -43,7 +40,9 @@ const ShowWeather = ({ data }) => {
   } else {
     // myObject is either null or undefined, or it doesn't have a 'name' property
     console.log("data.name is not defined or does not have a name");
+    data.name === "New York";
   }
+
   return (
     <div
       style={{
@@ -56,7 +55,7 @@ const ShowWeather = ({ data }) => {
     >
       <p>{`${fullDate}`}</p>
       <div style={{ display: "flex" }}>
-        <h1>Weather in {name}</h1>
+        <h1>Weather in {data.name}</h1>
         <Image
           src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
           alt="/"
@@ -75,3 +74,4 @@ const ShowWeather = ({ data }) => {
 };
 
 export default ShowWeather;
+ */
