@@ -97,7 +97,7 @@ const homePage = () => {
       <div className={styles.testDiv2}>
         Languages and Tools I use:
         <div className={styles.iconContainer}>
-          {/*  <Image
+          <Image
             className={styles.icon}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             alt=""
@@ -173,7 +173,7 @@ const homePage = () => {
             alt=""
             width={60}
             height={60}
-          /> */}
+          />
         </div>
       </div>
       <div className={styles.parallax3}></div>
@@ -213,7 +213,7 @@ const homePage = () => {
           </Link>
         </div>
       </div> */}
-      <div className={styles.parallax4}></div>
+      {/* <div className={styles.parallax4}></div> */}
       <div className={styles.testDiv4} id="projects">
         <h2>Aether</h2>
         <div className={styles.projectImgContainer}>
@@ -300,59 +300,52 @@ const homePage = () => {
         <h3>Experience</h3>
         <ul className={styles.ul}>
           <li>
-            Wunderkind – Software Engineer - 2022-2023
+            Wunderkind – Software Engineer - Jan 2022 - Jan 2023
             <ul>
               <li>
                 Successfully integrated internal platform with client campaigns
                 with vanilla JavaScript and in-house tools while writing
-                maintainable, reliable, scalable, and testable code.
+                maintainable, reliable, scalable, and testable code
               </li>
               <li>
-                Maintained existing APIs and built out new functionality to
-                communicate efficiently with clients.
+                Built out new functionality and maintained existing APIs to
+                ensure code is clean and efficient
               </li>
               <li>
-                Reviewed for peers as well assisted in assessment of tools and
-                resources for web accessibility implementation.
+                Reviewed code for peers and assessed tools and resources for web
+                accessibility implementation
               </li>
               <li>
-                Utilized and improved proficiency in JavaScript, HTML, CSS, and
-                jQuery by creating and implementing elegant user-facing
-                campaigns for hundreds of well-known web services.
-              </li>
-            </ul>
-          </li>
-          <li>
-            New York Public Radio - Front Office Administration/Production
-            Assistant - 2017-2022
-            <ul>
-              <li>
-                Maintained security and conducted administrative tasks at the
-                reception desk
-              </li>
-              <li>
-                Assisted in preparation and production of scripts and content
-                for WQXR’s Carnegie Hall Live broadcasts.
+                Utilized JavaScript, HTML, CSS, and jQuery to create efficient
+                and userfriendly marketing campaigns for hundreds of major
+                companies
               </li>
             </ul>
           </li>
           <li>
-            US Army, Reserves - Soldier/Executive Officer/Musician/Webmaster -
-            2004-current
+            Freelance Web Designer & Manager - Mar 2020 - current
             <ul>
               <li>
-                Serves as a Warrant Officer, responsible for management and
-                well-being of a 50+ person team in all aspects related to HR,
-                finance, and training.
+                Design and maintain various websites for clients using
+                Javascript, React, HTML, and CSS
+              </li>
+            </ul>
+          </li>
+          <li>
+            US Army, Reserves - Web Designer & Manager - Nov 2004 - current
+            <ul>
+              <li>
+                Website Manager - Designs and maintains website for the 78th
+                Army Reserves Band using Javascript, React, HTML and CSS
               </li>
               <li>
-                Program, produces, and musically performs 100+ community and
-                training events in the tri-state area.
+                Serves as a Warrant Officer, responsible for the management and
+                wellbeing of a 50+ person team in all aspects related to HR,
+                finance, and training
               </li>
               <li>
-                Builds, develops, and maintains the 78th Army Band website in
-                order to provide a tool for the civilian community to connect
-                and access the unit’s social media resources.
+                Programs, produces, and performs at 100+ community and training
+                events in the tri-state area
               </li>
             </ul>
           </li>
@@ -360,13 +353,10 @@ const homePage = () => {
         <h3>Education</h3>
         <ul>
           <li>
-            Fullstack Academy - Software Engineering Immersive program - 2021
+            Fullstack Academy - Certification, Software Engineering - Feb 2021
           </li>
-          <li>Hunter College - MA, Music Composition - 2019</li>
-          <li>
-            Ball State University - Bachelor of Arts, Emphasis in Music
-            Education - 2014
-          </li>
+          <li>Hunter College - MA, Music Composition - Jun 2019</li>
+          <li>Ball State University - BA, Music Education - Jun 2014</li>
         </ul>
 
         <div className={styles.links}>
