@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import Image from "next/image";
 
 const ShowWeather = ({ data }) => {
@@ -74,3 +74,4 @@ const ShowWeather = ({ data }) => {
 };
 
 export default ShowWeather;
+ */
