@@ -214,7 +214,7 @@ const homePage = () => {
         </div>
       </div> */}
       <div className={styles.parallax4}></div>
-      <div className={styles.testDiv4}>
+      <div className={styles.testDiv4} id="projects">
         <h2>Aether</h2>
         <div className={styles.projectImgContainer}>
           <Image
