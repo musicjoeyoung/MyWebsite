@@ -56,7 +56,7 @@ const homePage = () => {
           Joseph Young{" "}
         </h1>
         <p className={styles.welcome}>
-          I’m a software engineer specializing in building and testing
+          I am a software engineer specializing in building and testing
           exceptional digital experiences. Scroll down to learn a little more
           about me!
         </p>
@@ -74,19 +74,19 @@ const homePage = () => {
             height={500}
           />
           <p className={styles.bioP}>
-            I'm a software engineer with multiple years of experience coding,
+            I am a software engineer with multiple years of experience coding,
             debugging, testing, and troubleshooting in application development
             processes. I work primarily in Javascript with HTML5, CSS3, React,
             Redux, Node, Express, Sequelize, PostgreSQL, Babel, Webpack, OAuth,
             and have a special interest in Web Accessiblity.
             <br />
             <br />I design and manage websites for a number of clients. In
-            addition to graduating from Fullstack Academy's Intensive Immersion
-            program, I have also earned certifications in Data Science with
-            Python from MIT via EdX.org.
+            addition to graduating from Fullstack Academy&#39;s Intensive
+            Immersion program, I have also earned certifications in Data Science
+            with Python from MIT via EdX.org.
             <br />
             <br />
-            Fun Fact: I'm also in the Army Reserves where I'm an Executive
+            Fun Fact: I am also in the Army Reserves where I am an Executive
             Officer for a military band, and we play lots of wonderful music!
           </p>
         </div>
@@ -266,7 +266,7 @@ const homePage = () => {
         </div>
         <p>
           A hackathon challenge by Mintbean.io with a short turnaround, my goal
-          was to make a game that tests the user';s ability to remember and
+          was to make a game that tests the ability of the user to remember and
           playback different arrangements of pitches and also strengthen their
           tonal and visual memory.
         </p>
