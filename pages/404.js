@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
     <>
       <h1 className={styles.h1}>
-        Sorry! It looks like this page doesn't exist! Click{" "}
+        Sorry! It looks like this page does not exist! Click{" "}
         <Link className={styles.a} href="/">
           here
         </Link>{" "}
