@@ -55,7 +55,7 @@ const ShowWeather = ({ data }) => {
     >
       <p>{`${fullDate}`}</p>
       <div style={{ display: "flex" }}>
-        <h1>Weather in {data.name}</h1>
+        <h1>Weather in {data?.name}</h1>
         <Image
           src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
           alt="/"
