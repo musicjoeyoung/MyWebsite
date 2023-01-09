@@ -74,21 +74,20 @@ const homePage = () => {
             height={500}
           />
           <p className={styles.bioP}>
-            I&aposm a software engineer with multiple years of experience
-            coding, debugging, testing, and troubleshooting in application
-            development processes. I work primarily in Javascript with HTML5,
-            CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Babel,
-            Webpack, OAuth, and have a special interest in Web Accessiblity.
+            I'm a software engineer with multiple years of experience coding,
+            debugging, testing, and troubleshooting in application development
+            processes. I work primarily in Javascript with HTML5, CSS3, React,
+            Redux, Node, Express, Sequelize, PostgreSQL, Babel, Webpack, OAuth,
+            and have a special interest in Web Accessiblity.
             <br />
             <br />I design and manage websites for a number of clients. In
-            addition to graduating from Fullstack Academy&aposs Intensive
-            Immersion program, I have also earned certifications in Data Science
-            with Python from MIT via EdX.org.
+            addition to graduating from Fullstack Academy's Intensive Immersion
+            program, I have also earned certifications in Data Science with
+            Python from MIT via EdX.org.
             <br />
             <br />
-            Fun Fact: I&aposm also in the Army Reserves where I&aposm an
-            Executive Officer for a military band, and we play lots of wonderful
-            music!
+            Fun Fact: I'm also in the Army Reserves where I'm an Executive
+            Officer for a military band, and we play lots of wonderful music!
           </p>
         </div>
       </div>
@@ -267,7 +266,7 @@ const homePage = () => {
         </div>
         <p>
           A hackathon challenge by Mintbean.io with a short turnaround, my goal
-          was to make a game that tests the user&apos;s ability to remember and
+          was to make a game that tests the user';s ability to remember and
           playback different arrangements of pitches and also strengthen their
           tonal and visual memory.
         </p>
