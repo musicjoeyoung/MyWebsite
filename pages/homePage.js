@@ -178,7 +178,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax3}></div>
       {/* Projects */}
-      <div className={styles.testDiv3} id="projects">
+      {/*   <div className={styles.testDiv3} id="projects">
         <h2>Weather App</h2>
         <div className={styles.projectImgContainer}>
           <Image
@@ -212,7 +212,7 @@ const homePage = () => {
             Click here to view
           </Link>
         </div>
-      </div>
+      </div> */}
       <div className={styles.parallax4}></div>
       <div className={styles.testDiv4}>
         <h2>Aether</h2>
