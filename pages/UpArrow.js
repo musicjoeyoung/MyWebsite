@@ -35,13 +35,12 @@ const UpArrow = () => {
       {isVisible && (
         <div onClick={scrollToTop} className={styles.upContainer}>
           <Image
-            src="/images/UpIconArrow.png"
+            src="/images/arrow4.png"
             className={styles.img}
             alt="Float up!"
             width={60}
             height={60}
           />
-          <h4>Float up!</h4>
         </div>
       )}
     </div>

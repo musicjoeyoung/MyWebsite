@@ -28,10 +28,10 @@
 .parallax7,
 .parallax8 {
   /* The image used */
-  background-image: url("/images/animation_1.jpg");
+  background-image: url("/images/background3.jpg");
 
   /* Set a specific height */
-  min-height: 300px;
+  min-height: 200px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -40,25 +40,26 @@
   background-size: cover;
 }
 .parallax2 {
-  background-image: url("/images/animation_2.jpg");
+  background-image: url("/images/background3.jpg");
 }
 .parallax3 {
-  background-image: url("/images/animation_3.jpg");
+  background-image: url("/images/background3.jpg");
 }
 .parallax4 {
-  background-image: url("/images/animation_4.jpg");
+  background-image: url("/images/background3.jpg");
+  min-height: 15px;
 }
 .parallax5 {
-  background-image: url("/images/animation_5.jpg");
+  background-image: url("/images/background3.jpg");
 }
 .parallax6 {
-  background-image: url("/images/animation_6.jpg");
+  background-image: url("/images/background3.jpg");
 }
 .parallax7 {
-  background-image: url("/images/animation_7.jpg");
+  background-image: url("/images/background3.jpg");
 }
 .parallax8 {
-  background-image: url("/images/animation_8.jpg");
+  background-image: url("/images/background3.jpg");
 }
 
 .testDiv,
@@ -77,7 +78,7 @@
   box-shadow: 0 0 2rem -0.5rem #000000;
   scroll-margin-top: 80px;
 }
-.testDiv2,
+
 .testDiv7 {
   background-color: #06d6a0;
   color: white;
@@ -87,13 +88,17 @@
   background-color: #ffd166;
   color: black;
 }
-.testDiv4 {
-  background-color: #ef476f;
+.testDiv4,
+.testDiv2 {
+  background-color: #546a7b;
   color: white;
 }
 .testDiv5 {
   background-color: #073b4c;
   color: white;
+}
+.testDiv6 {
+  min-height: 300px;
 }
 .bio {
   display: flex;
@@ -197,13 +202,13 @@
 }
 .iconContainer {
   text-align: center;
-  padding: 10px;
-  background-color: #00000045;
+  padding: 1px;
+  background-color: #ffffff33;
   border-radius: 10px;
   margin-top: 10px;
 }
 .icon {
-  width: 60px;
+  width: 50px;
   margin: 10px;
 }
 
@@ -271,14 +276,7 @@
 
 .glowOnHover:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #118ab2,
-    #06d6a0,
-    #ffd166,
-    #ef476f,
-    #073b4c
-  );
+  background: linear-gradient(45deg, #073b4c, #118ab2, #546a7b, #c5cfd6);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -362,4 +360,23 @@
     margin-top: 17px;
   }
 }
-/* h 30 pad 3 */
+
+@media screen and (max-width: 450px) {
+  .main {
+    padding: 1rem;
+  }
+  .main h1 {
+    font-size: 45px !important;
+  }
+  .bioPic {
+    width: 100%;
+  }
+
+  .testDiv5,
+  .testDiv,
+  .testDiv2,
+  .testDiv4,
+  .testDiv6 {
+    padding: 50px 15px 50px 15px;
+  }
+}

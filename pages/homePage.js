@@ -51,14 +51,13 @@ const homePage = () => {
         <HamburgerMenu />
       </header>
       <div className={styles.main}>
-        <h2 className={styles.welcome}>Hello, my name is </h2>
+        {/* <h2 className={styles.welcome}>Hello, my name is </h2> */}
         <h1 className={styles.welcome} style={{ fontSize: "60px" }}>
           Joseph Young{" "}
         </h1>
         <p className={styles.welcome}>
-          I am a software engineer specializing in building and testing
-          exceptional digital experiences. Scroll down to learn a little more
-          about me!
+          Software engineer specializing in building and testing exceptional
+          digital experiences. Scroll down to learn more.
         </p>
       </div>
       <div className={styles.parallax}></div>
@@ -90,11 +89,7 @@ const homePage = () => {
             Officer for a military band, and we play lots of wonderful music!
           </p>
         </div>
-      </div>
-      <div className={styles.parallax2}></div>
-      {/* Tech */}
-      <div className={styles.testDiv2}>
-        Languages and Tools I use:
+        <h3>Languages and Tools I use:</h3>
         <div className={styles.iconContainer}>
           <Image
             className={styles.icon}
@@ -175,125 +170,102 @@ const homePage = () => {
           />
         </div>
       </div>
+
+      {/* Tech */}
+
       <div className={styles.parallax3}></div>
       {/* Projects */}
-      {/*   <div className={styles.testDiv3} id="projects">
-        <h2>Weather App</h2>
-        <div className={styles.projectImgContainer}>
-          <Image
-            className={styles.projectImg}
-            src="/images/WeatherApp.png"
-            alt="Picture of the project"
-            width={500}
-            height={300}
-          />
-        </div>
-        <p>
-          Built within this website, this weather app makes use of the
-          OpenWeather API.
-        </p>
-        <div className={styles.links}>
-          <Link
-            href="https://github.com/musicjoeyoung/MyWebsite/tree/main/pages/components/weather"
-            className={styles.glowOnHover}
-            style={{ color: "black" }}
-          >
-            Github
-          </Link>
-        </div>
 
-        <div className={styles.links}>
-          <Link
-            href="/components/weatherApp/weather"
-            className={styles.glowOnHover}
-            style={{ color: "black" }}
-          >
-            Click here to view
-          </Link>
-        </div>
-      </div> */}
-      {/* <div className={styles.parallax4}></div> */}
       <div className={styles.testDiv4} id="projects">
-        <h2>Aether</h2>
-        <div className={styles.projectImgContainer}>
-          <Image
-            className={styles.projectImg}
-            src="/images/Aether.png"
-            alt="Picture of the project"
-            width={500}
-            height={500}
-          />
-        </div>
-        <p>
-          Built as a final capstone project at the Fullstack Academy, this is an
-          audio-visual music collaboration experience. Our goal was to create a
-          loosely structured audio visual “jam” space for users to compose and
-          visualize music with a variety of instruments collaboratively in a
-          live session. When collaborative art cannot be made in-person, this
-          application can bring people together in a creative environment. This
-          space serves as a tool to make music in a live 3-D session.
-          <br />
-          <br />
-          Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
-          Redux, Express, Framer/Framer-Motion
-        </p>
-        <div className={styles.links}>
-          <Link
-            href="https://github.com/musicjoeyoung/aether"
-            className={styles.glowOnHover}
-          >
-            Github
-          </Link>
-          {/*           <Link
+        <h2>Select Projects</h2>
+
+        <div>
+          <h3>Aether</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/Aether.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>
+            Built as a final capstone project at the Fullstack Academy, this is
+            an audio-visual music collaboration experience. Our goal was to
+            create a loosely structured audio visual “jam” space for users to
+            compose and visualize music with a variety of instruments
+            collaboratively in a live session. When collaborative art cannot be
+            made in-person, this application can bring people together in a
+            creative environment. This space serves as a tool to make music in a
+            live 3-D session.
+            <br />
+            <br />
+            Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
+            Redux, Express, Framer/Framer-Motion
+          </p>
+          <div className={styles.links}>
+            <Link
+              href="https://github.com/musicjoeyoung/aether"
+              className={styles.glowOnHover}
+            >
+              Github
+            </Link>
+            {/*           <Link
             href="https://aether-leo.herokuapp.com/sesh"
             className={styles.glowOnHover}
           >
             Click here to view
           </Link> */}
+          </div>
         </div>
       </div>
-      <div className={styles.parallax5}></div>
-      <div className={styles.testDiv5}>
-        <h2>Music Memory</h2>
-        <div className={styles.projectImgContainer}>
-          <Image
-            className={styles.projectImg}
-            src="/images/MusicMemory.png"
-            alt="Picture of the project"
-            width={500}
-            height={500}
-          />
-        </div>
-        <p>
-          A hackathon challenge by Mintbean.io with a short turnaround, my goal
-          was to make a game that tests the ability of the user to remember and
-          playback different arrangements of pitches and also strengthen their
-          tonal and visual memory.
-        </p>
-        <div className={styles.links}>
-          <Link
-            href="https://github.com/musicjoeyoung/MusicMemoryGame"
-            className={styles.glowOnHover}
-          >
-            Github
-          </Link>
-          <Link
-            href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
-            className={styles.glowOnHover}
-          >
-            Medium Article
-          </Link>
-          {/*          <Link
+      <div className={styles.parallax4}></div>
+      <div className={styles.testDiv2}>
+        <div>
+          <h3>Music Memory</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/MusicMemory.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>
+            A hackathon challenge by Mintbean.io with a short turnaround, my
+            goal was to make a game that tests the ability of the user to
+            remember and playback different arrangements of pitches and also
+            strengthen their tonal and visual memory.
+          </p>
+          <div className={styles.links}>
+            <Link
+              href="https://github.com/musicjoeyoung/MusicMemoryGame"
+              className={styles.glowOnHover}
+            >
+              Github
+            </Link>
+            <Link
+              href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
+              className={styles.glowOnHover}
+            >
+              Medium Article
+            </Link>
+            {/*          <Link
             href="https://music-memory-game.herokuapp.com/"
             className={styles.glowOnHover}
           >
             Click here to view
           </Link> */}
+          </div>
         </div>
       </div>
-      <div className={styles.parallax6}></div>
+
+      <div className={styles.parallax5}></div>
+
       {/* Resume */}
-      <div className={styles.testDiv6} id="resume">
+      <div className={styles.testDiv5} id="resume">
         <h2>Resume</h2>
 
         <h3>Experience</h3>
@@ -368,13 +340,13 @@ const homePage = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.parallax7}></div>
+      <div className={styles.parallax6}></div>
+
       {/* Contact */}
-      <div className={styles.testDiv7} id="contact">
+      <div className={styles.testDiv6} id="contact">
         <Contact />
       </div>
-      <div className={styles.parallax8}></div>
-      <div className={styles.testDiv8}>Thanks for visiting!</div>
+
       <UpArrow />
     </>
   );
