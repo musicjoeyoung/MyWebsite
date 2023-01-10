@@ -80,9 +80,9 @@ const homePage = () => {
           <p className={styles.bioP}>
             I am a software engineer with multiple years of experience coding,
             debugging, testing, and troubleshooting in application development
-            processes. I work primarily in Javascript with HTML5, CSS3, React,
-            Redux, Node, Express, Sequelize, PostgreSQL, Babel, Webpack, OAuth,
-            and have a special interest in Web Accessiblity.
+            processes. I work primarily in Javascript with HTML, CSS, React,
+            Redux, Node, Express, PostgreSQL, and have a special interest in Web
+            Accessiblity.
             <br />
             <br />I design and manage websites for a number of clients. In
             addition to graduating from Fullstack Academy&#39;s Intensive
@@ -255,7 +255,7 @@ const homePage = () => {
               href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
               className={styles.glowOnHover}
             >
-              Medium Article
+              Write-up on Medium
             </Link>
             {/*          <Link
             href="https://music-memory-game.herokuapp.com/"
@@ -335,15 +335,14 @@ const homePage = () => {
           <li>Ball State University - BA, Music Education - Jun 2014</li>
         </ul>
 
-        <div className={styles.links}>
+        {/*       <div className={styles.links}>
           <Link
             href="https://www.linkedin.com/in/joseph-m-young/"
             className={styles.glowOnHover}
-            /* style={{ color: "black" }} */
           >
             You may also find my resume information at LinkedIn.
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className={styles.parallax6}></div>
 
