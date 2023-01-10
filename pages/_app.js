@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="shortcut icon" href="/images/favicon.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
