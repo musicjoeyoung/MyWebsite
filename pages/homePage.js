@@ -13,7 +13,12 @@ const homePage = () => {
         <nav className={styles.nav}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image src="/favicon.png" alt="JY logo" width={50} height={50} />
+              <Image
+                src="/images/favicon.ico"
+                alt="JY logo"
+                width={50}
+                height={50}
+              />
             </Link>
             <title>Joseph Young</title>
           </div>
