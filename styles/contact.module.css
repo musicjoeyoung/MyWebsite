@@ -1,3 +1,84 @@
 .container {
   text-align: center;
 }
+
+.glowOnHover {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #00000000;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 35px;
+  padding: 15px;
+  text-align: center;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  /* margin: 20px; */
+}
+
+.glowOnHover:before {
+  content: "";
+  background: linear-gradient(45deg, #073b4c, #118ab2, #546a7b, #c5cfd6);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.glowOnHover:active {
+  color: #000;
+}
+
+.glowOnHover:active:after {
+  background: transparent;
+}
+
+.glowOnHover:hover:before {
+  opacity: 1;
+}
+
+.glowOnHover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #111111b5; */
+  left: 0;
+  top: 0;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
