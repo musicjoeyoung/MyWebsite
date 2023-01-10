@@ -229,6 +229,9 @@
   flex-direction: column;
 }
 .links .glowOnHover {
+  font-size: 19px;
+}
+.links .glowOnHover {
   height: 30px;
   padding: 3px;
 }
