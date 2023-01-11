@@ -1,22 +1,24 @@
 .container {
   text-align: center;
+  margin-top: 15%;
 }
 
 .iconContainer {
-  text-align: center;
-  padding: 1px;
-  background-color: #ffffff33;
-  border-radius: 10px;
-  margin-top: 10px;
+  width: 70px;
+  position: fixed;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -80px;
 }
 .icon {
-  width: 50px;
+  width: 30px;
   margin: 10px;
 }
-.email {
+/* .email {
   width: 60px;
   margin: 10px;
-}
+} */
 
 .glowOnHover {
   width: 100%;
@@ -96,5 +98,15 @@
   }
   100% {
     background-position: 0 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .iconContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    bottom: 0px;
   }
 }

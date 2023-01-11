@@ -25,7 +25,15 @@ const HamburgerMenu = () => {
           <Link href="#projects">Projects</Link>
         </li>
         <li className={styles.li}>
-          <Link href="#resume">Resume</Link>
+          <Link href="#experience">Experience</Link>
+        </li>
+        <li className={styles.li}>
+          <Link
+            href="/images/JosephYoung_Resume_FrontEndDeveloper.pdf"
+            target="_blank"
+          >
+            Resume
+          </Link>
         </li>
         <li className={styles.li}>
           <Link href="#contact">Contact</Link>

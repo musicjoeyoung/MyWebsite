@@ -41,7 +41,16 @@ const homePage = () => {
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href="#resume" className={styles.glowOnHover}>
+                <Link href="#experience" className={styles.glowOnHover}>
+                  Experience
+                </Link>
+              </li>
+              <li className={styles.li}>
+                <Link
+                  href="/images/JosephYoung_Resume_FrontEndDeveloper.pdf"
+                  className={styles.glowOnHover}
+                  target="_blank"
+                >
                   Resume
                 </Link>
               </li>
@@ -94,7 +103,7 @@ const homePage = () => {
             Officer for a military band, and we play lots of wonderful music!
           </p>
         </div>
-        <h3>Languages and Tools I use:</h3>
+        <h3 className={styles.bioH3}>Languages and Tools I use:</h3>
         <div className={styles.iconContainer}>
           <Image
             className={styles.icon}
@@ -161,7 +170,7 @@ const homePage = () => {
           />
           <Image
             className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
             alt=""
             width={60}
             height={60}
@@ -178,7 +187,7 @@ const homePage = () => {
 
       {/* Tech */}
 
-      <div className={styles.parallax3}></div>
+      <div className={styles.parallax}></div>
       {/* Projects */}
 
       <div className={styles.testDiv4} id="projects">
@@ -225,7 +234,7 @@ const homePage = () => {
           </div>
         </div>
       </div>
-      <div className={styles.parallax4}></div>
+      <div className={styles.parallax2}></div>
       <div className={styles.testDiv2}>
         <div>
           <h3>Music Memory</h3>
@@ -267,15 +276,13 @@ const homePage = () => {
         </div>
       </div>
 
-      <div className={styles.parallax5}></div>
+      <div className={styles.parallax}></div>
 
-      {/* Resume */}
-      <div className={styles.testDiv5} id="resume">
-        <h2>Resume</h2>
-
-        <h3>Experience</h3>
+      {/* Experience */}
+      <div className={styles.testDiv5} id="experience">
+        <h2>Relevant Experience</h2>
         <ul className={styles.ul}>
-          <li>
+          <li className={styles.li}>
             Wunderkind – Software Engineer - Jan 2022 - Jan 2023
             <ul>
               <li>
@@ -298,7 +305,7 @@ const homePage = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className={styles.li}>
             Freelance Web Designer & Manager - Mar 2020 - current
             <ul>
               <li>
@@ -307,7 +314,7 @@ const homePage = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className={styles.li}>
             US Army, Reserves - Web Designer & Manager - Nov 2004 - current
             <ul>
               <li>
@@ -326,25 +333,8 @@ const homePage = () => {
             </ul>
           </li>
         </ul>
-        <h3>Education</h3>
-        <ul>
-          <li>
-            Fullstack Academy - Certification, Software Engineering - Feb 2021
-          </li>
-          <li>Hunter College - MA, Music Composition - Jun 2019</li>
-          <li>Ball State University - BA, Music Education - Jun 2014</li>
-        </ul>
-
-        {/*       <div className={styles.links}>
-          <Link
-            href="https://www.linkedin.com/in/joseph-m-young/"
-            className={styles.glowOnHover}
-          >
-            You may also find my resume information at LinkedIn.
-          </Link>
-        </div> */}
       </div>
-      <div className={styles.parallax6}></div>
+      <div className={styles.parallax}></div>
 
       {/* Contact */}
       <div className={styles.testDiv6} id="contact">

@@ -12,7 +12,7 @@
 } */
 .scrollToTop {
   position: fixed;
-  bottom: 0;
+  bottom: 15px;
   right: 0;
 }
 .upContainer {
