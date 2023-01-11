@@ -26,7 +26,7 @@ const homePage = () => {
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
-                <Link href="/" className={styles.glowOnHover}>
+                <Link href="/homePage" className={styles.glowOnHover}>
                   Home
                 </Link>
               </li>
@@ -309,7 +309,7 @@ const homePage = () => {
             Freelance Web Designer & Manager - Mar 2020 - current
             <ul>
               <li>
-                Design and maintain various websites for clients using
+                Build, design, and maintain various websites for clients using
                 Javascript, React, HTML, and CSS
               </li>
             </ul>

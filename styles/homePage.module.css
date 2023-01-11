@@ -46,7 +46,7 @@
 .testDiv8 {
   min-height: 100vh;
   max-height: 100%;
-  background-color: #118ab2;
+  background-color: #073b4c;
   color: white;
   padding: 75px;
   box-shadow: 0 0 2rem -0.5rem #000000;
@@ -54,17 +54,17 @@
 }
 
 .testDiv7 {
-  background-color: #06d6a0;
+  background-color: #073b4c;
   color: white;
 }
 .testDiv3,
 .testDiv8 {
-  background-color: #546a7b;
+  background-color: #073b4c;
   color: white;
 }
 .testDiv4,
 .testDiv2 {
-  background-color: #546a7b;
+  background-color: #073b4c;
   color: white;
 }
 .testDiv5 {
@@ -201,7 +201,7 @@
 }
 
 .projectImg {
-  width: 75%;
+  width: 70%;
   height: 100%;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);

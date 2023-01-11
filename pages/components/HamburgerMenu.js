@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
       />
       <div className={styles.dropdownContent}>
         <li className={styles.li}>
-          <Link href="/" className={styles.glowOnHover}>
+          <Link href="/homePage" className={styles.glowOnHover}>
             Home
           </Link>
         </li>
