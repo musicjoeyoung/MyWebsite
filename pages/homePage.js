@@ -86,102 +86,103 @@ const homePage = () => {
             width={500}
             height={500}
           />
-          <p className={styles.bioP}>
-            I am a software engineer with multiple years of experience coding,
-            debugging, testing, and troubleshooting in application development
-            processes. I work primarily in Javascript with HTML, CSS, React,
-            Redux, Node, Express, PostgreSQL, and have a special interest in Web
-            Accessiblity.
-            <br />
-            <br />I design and manage websites for a number of clients. In
-            addition to graduating from Fullstack Academy&#39;s Intensive
-            Immersion program, I have also earned certifications in Data Science
-            with Python from MIT via EdX.org.
-            <br />
-            <br />
-            Fun Fact: I am also in the Army Reserves where I am an Executive
-            Officer for a military band, and we play lots of wonderful music!
-          </p>
-        </div>
-        <h3 className={styles.bioH3}>Languages and Tools I use:</h3>
-        <div className={styles.iconContainer}>
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
-          <Image
-            className={styles.icon}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
-            alt=""
-            width={60}
-            height={60}
-          />
+          <div>
+            <p className={styles.bioP}>
+              I am a software engineer with multiple years of experience coding,
+              debugging, testing, and troubleshooting in application development
+              processes. I work primarily in Javascript with HTML, CSS, React,
+              Redux, Node, Express, PostgreSQL, and have a special interest in
+              Web Accessiblity.
+              <br />
+              <br />I design, build, and manage websites for a number of
+              clients. In addition to graduating from Fullstack Academy&#39;s
+              Intensive Immersion program, I have also earned certifications in
+              Data Science with Python from MIT via EdX.org.
+              <br />
+              <br />
+              Fun Fact: I am also in the Army Reserves where I am an Executive
+              Officer for a military band, and we play lots of wonderful music!
+            </p>
+            <div className={styles.iconContainer}>
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
+                alt=""
+                width={60}
+                height={60}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -264,7 +265,7 @@ const homePage = () => {
               href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
               className={styles.glowOnHover}
             >
-              Write-up on Medium
+              Medium
             </Link>
             {/*          <Link
             href="https://music-memory-game.herokuapp.com/"
