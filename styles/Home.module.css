@@ -7,17 +7,17 @@
   justify-content: center;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  background-image: url("/images/minimalBackground.jpg");
+  background-image: url("/images/background3.jpg");
   background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  color: #073b4c;
 }
 
 .main h1 {
-  color: black;
+  color: #073b4c;
 }
 
 .footer {
@@ -52,13 +52,14 @@
   height: 50px;
   border: none;
   outline: none;
-  color: #fff;
-  background: #00000000;
+  color: white;
+  font-size: 20px;
+  background: #073b4c;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 35px;
-  padding: 15px;
+  padding: 13px;
   text-align: center;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
@@ -106,7 +107,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111111b5;
+  background: #073b4c;
   left: 0;
   top: 0;
   border-radius: 35px;
