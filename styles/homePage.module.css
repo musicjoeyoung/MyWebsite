@@ -19,21 +19,9 @@
   -ms-animation: fadeIn 3s;
 }
 
-.parallax,
-.parallax2,
-.parallax3,
-.parallax4,
-.parallax5,
-.parallax6,
-.parallax7,
-.parallax8 {
-  /* The image used */
+.parallax {
   background-image: url("/images/background3.jpg");
-
-  /* Set a specific height */
   min-height: 200px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,25 +29,11 @@
 }
 .parallax2 {
   background-image: url("/images/background3.jpg");
-}
-.parallax3 {
-  background-image: url("/images/background3.jpg");
-}
-.parallax4 {
-  background-image: url("/images/background3.jpg");
-  min-height: 15px;
-}
-.parallax5 {
-  background-image: url("/images/background3.jpg");
-}
-.parallax6 {
-  background-image: url("/images/background3.jpg");
-}
-.parallax7 {
-  background-image: url("/images/background3.jpg");
-}
-.parallax8 {
-  background-image: url("/images/background3.jpg");
+  min-height: 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .testDiv,
@@ -70,11 +44,11 @@
 .testDiv6,
 .testDiv7,
 .testDiv8 {
-  min-height: 400px;
+  min-height: 100vh;
   max-height: 100%;
   background-color: #118ab2;
   color: white;
-  padding: 50px;
+  padding: 75px;
   box-shadow: 0 0 2rem -0.5rem #000000;
   scroll-margin-top: 80px;
 }
@@ -85,8 +59,8 @@
 }
 .testDiv3,
 .testDiv8 {
-  background-color: #ffd166;
-  color: black;
+  background-color: #546a7b;
+  color: white;
 }
 .testDiv4,
 .testDiv2 {
@@ -97,9 +71,7 @@
   background-color: #073b4c;
   color: white;
 }
-.testDiv6 {
-  min-height: 300px;
-}
+
 .bio {
   display: flex;
 }
@@ -110,6 +82,11 @@
 }
 .bioP {
   margin-top: 0px;
+}
+
+.bioH3 {
+  margin-top: 100px;
+  text-align: center;
 }
 .header {
   background-color: #073b4c;
@@ -197,13 +174,24 @@
   -o-animation: fadeIn 4.5s;
   -ms-animation: fadeIn 4.5s;
 }
+.li:nth-child(6) {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+/* #50f9f9 */
 .ul {
-  line-height: 22px;
+  line-height: 28px;
+}
+.li {
+  margin-bottom: 15px;
 }
 .iconContainer {
   text-align: center;
   padding: 1px;
-  background-color: #ffffff33;
+  /* background-color: #ffffff33; */
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -213,7 +201,7 @@
 }
 
 .projectImg {
-  width: 100%;
+  width: 75%;
   height: 100%;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
@@ -223,6 +211,9 @@
 .projectImgContainer {
   text-align: center;
 }
+.resume {
+  text-align: center;
+}
 
 .links {
   display: flex;
@@ -230,6 +221,9 @@
 }
 .links .glowOnHover {
   font-size: 19px;
+}
+.li:nth-child(5) a {
+  color: #50f9f9;
 }
 .links .glowOnHover {
   height: 30px;
@@ -338,18 +332,11 @@
   }
 }
 
-@media screen and (max-width: 634px) {
+@media screen and (max-width: 771px) {
   .nav {
     display: none;
   }
-  .parallax,
-  .parallax2,
-  .parallax3,
-  .parallax4,
-  .parallax5,
-  .parallax6,
-  .parallax7,
-  .parallax8 {
+  .parallax {
     background-attachment: initial;
   }
   .bio {
