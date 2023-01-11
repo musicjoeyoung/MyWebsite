@@ -8,10 +8,10 @@ const Contact = () => {
     <div>
       <h2>Contact</h2>
       <div className={styles.container}>
-        <h3>
+        <p>
           I&#39;m always looking to collaborate on projects that improve the
           user experience and help make the world a bit better.
-        </h3>
+        </p>
         <h3 className={styles.h3}>
           <a
             href="mailto:joseph.m.young2@gmail.com"

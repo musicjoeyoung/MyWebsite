@@ -104,11 +104,13 @@
 }
 @media screen and (max-width: 450px) {
   .iconContainer {
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
+
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 0px;
+
     bottom: 0px;
   }
 }
