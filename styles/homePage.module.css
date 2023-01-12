@@ -385,4 +385,15 @@
   .ul {
     width: 90%;
   }
+  .testDiv p,
+  .testDiv2 p,
+  .testDiv3 p,
+  .testDiv4 p,
+  .testDiv5 p,
+  .testDiv6 p,
+  .testDiv7 p,
+  .testDiv8 p {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
