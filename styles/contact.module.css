@@ -106,11 +106,15 @@
   .iconContainer {
     margin: 0 auto;
     width: 50%;
-
     position: relative;
-    display: flex;
-    flex-direction: row;
-
+    display: inline-block;
     bottom: 0px;
+    margin-top: 80px;
+  }
+  .h3 {
+    margin-top: 80px;
+  }
+  .glowOnHover:before {
+    opacity: 1;
   }
 }

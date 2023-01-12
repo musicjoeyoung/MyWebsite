@@ -21,7 +21,7 @@
 
 .parallax {
   background-image: url("/images/background3.jpg");
-  min-height: 200px;
+  min-height: 100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@
   border-radius: 10px;
   margin-top: 10px;
   margin-left: -11px;
-  text-align: left;
+  text-align: center;
 }
 .icon {
   width: 50px;
@@ -270,7 +270,6 @@
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
-  /* margin: 20px; */
 }
 
 .glowOnHover:before {
@@ -371,5 +370,19 @@
   .testDiv6 {
     padding: 50px 15px 50px 15px;
     scroll-margin-top: 55px;
+  }
+  .parallax,
+  .parallax2 {
+    min-height: 20px;
+    background-color: rgb(237, 219, 219);
+  }
+  .links .glowOnHover:before {
+    opacity: 1;
+  }
+  .links .glowOnHover {
+    margin-bottom: 30px;
+  }
+  .ul {
+    width: 90%;
   }
 }
