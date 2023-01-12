@@ -37,7 +37,7 @@ const UpArrow = () => {
           <Image
             src="/images/arrow4.png"
             className={styles.img}
-            alt="Float up!"
+            alt="Scroll up arrow"
             width={60}
             height={60}
           />
