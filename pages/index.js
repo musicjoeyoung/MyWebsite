@@ -65,7 +65,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className="word"></div>
-        <h1>Joseph M. Young</h1>
+        <h1>Joseph Young</h1>
         <div className={styles.homePagesContainer}>
           <Link className={styles.glowOnHover} href="/homePage">
             Enter

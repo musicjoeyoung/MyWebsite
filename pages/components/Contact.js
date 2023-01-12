@@ -29,7 +29,7 @@ const Contact = () => {
             <Image
               className={styles.icon}
               src="/images/linkedinIcon.png"
-              alt=""
+              alt="LinkedIn"
               width={30}
               height={30}
             />
@@ -41,7 +41,7 @@ const Contact = () => {
             <Image
               className={styles.icon}
               src="/images/githubIcon.png"
-              alt=""
+              alt="Github"
               width={30}
               height={30}
             />
@@ -53,7 +53,7 @@ const Contact = () => {
             <Image
               className={styles.icon}
               src="/images/emailIcon.png"
-              alt=""
+              alt="Email"
               width={30}
               height={30}
             />

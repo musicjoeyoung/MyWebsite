@@ -107,77 +107,77 @@ const homePage = () => {
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt=""
+                alt="Javscript"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                alt=""
+                alt="HTML5"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                alt=""
+                alt="CSS3"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                alt=""
+                alt="React JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                alt=""
+                alt="Next JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-                alt=""
+                alt="Canva"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                alt=""
+                alt="Express"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                alt=""
+                alt="Node JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-                alt=""
+                alt="PostgreSQL"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                alt=""
+                alt="Python"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
-                alt=""
+                alt="jQuery"
                 width={60}
                 height={60}
               />
