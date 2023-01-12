@@ -18,7 +18,6 @@ const homePage = () => {
                 alt="JY logo"
                 width={50}
                 height={50}
-                priority:true
               />
             </Link>
             <title>Joseph Young</title>

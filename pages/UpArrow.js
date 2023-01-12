@@ -40,7 +40,6 @@ const UpArrow = () => {
             alt="Scroll up arrow"
             width={60}
             height={60}
-            priority:true
           />
         </div>
       )}
