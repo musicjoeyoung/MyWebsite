@@ -14,7 +14,6 @@ const HamburgerMenu = () => {
             width={50}
             height={50}
             priority:true
-            placeholder="empty"
           />
         </Link>
       </div>

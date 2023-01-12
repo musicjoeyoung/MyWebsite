@@ -33,7 +33,6 @@ const Contact = () => {
               width={30}
               height={30}
               priority:true
-              placeholder="empty"
             />
           </a>
           <a
@@ -47,7 +46,6 @@ const Contact = () => {
               width={30}
               height={30}
               priority:true
-              placeholder="empty"
             />
           </a>
           <a
@@ -61,7 +59,6 @@ const Contact = () => {
               width={30}
               height={30}
               priority:true
-              placeholder="empty"
             />
           </a>
         </div>
