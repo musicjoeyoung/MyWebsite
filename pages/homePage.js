@@ -288,7 +288,7 @@ const homePage = () => {
             <ul>
               <li>
                 Successfully integrated internal platform with client campaigns
-                with vanilla JavaScript and in-house tools while writing
+                with vanilla Javascript and in-house tools while writing
                 maintainable, reliable, scalable, and testable code
               </li>
               <li>
@@ -300,8 +300,8 @@ const homePage = () => {
                 accessibility implementation
               </li>
               <li>
-                Utilized JavaScript, HTML, CSS, and jQuery to create efficient
-                and userfriendly marketing campaigns for hundreds of major
+                Utilized Javascript, HTML, CSS, and jQuery to create efficient
+                and user-friendly marketing campaigns for hundreds of major
                 companies
               </li>
             </ul>
@@ -310,8 +310,8 @@ const homePage = () => {
             Freelance Web Designer & Manager - Mar 2020 - current
             <ul>
               <li>
-                Build, design, and maintain various websites for clients using
-                Javascript, React, HTML, and CSS
+                Designs, builds, and maintains various websites for clients
+                using Javascript, React, HTML, and CSS
               </li>
             </ul>
           </li>
@@ -319,12 +319,12 @@ const homePage = () => {
             US Army, Reserves - Web Designer & Manager - Nov 2004 - current
             <ul>
               <li>
-                Website Manager - Designs and maintains website for the 78th
-                Army Reserves Band using Javascript, React, HTML and CSS
+                Website Manager - Designs, builds, and maintains website for the
+                78th Army Reserves Band using Javascript, React, HTML and CSS
               </li>
               <li>
                 Serves as a Warrant Officer, responsible for the management and
-                wellbeing of a 50+ person team in all aspects related to HR,
+                well-being of a 50+ person team in all aspects related to HR,
                 finance, and training
               </li>
               <li>

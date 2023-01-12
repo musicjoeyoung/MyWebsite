@@ -380,7 +380,8 @@
     opacity: 1;
   }
   .links .glowOnHover {
-    margin-bottom: 30px;
+    width: 50%;
+    margin: 10% 0% 2% 25%;
   }
   .ul {
     width: 90%;
@@ -395,5 +396,8 @@
   .testDiv8 p {
     width: 90%;
     margin: 0 auto;
+  }
+  .projectImg {
+    margin-bottom: 30px;
   }
 }
