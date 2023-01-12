@@ -32,7 +32,6 @@ const Contact = () => {
               alt="LinkedIn"
               width={30}
               height={30}
-              priority:true
             />
           </a>
           <a
@@ -45,7 +44,6 @@ const Contact = () => {
               alt="Github"
               width={30}
               height={30}
-              priority:true
             />
           </a>
           <a
@@ -58,7 +56,6 @@ const Contact = () => {
               alt="Email"
               width={30}
               height={30}
-              priority:true
             />
           </a>
         </div>
