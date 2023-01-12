@@ -8,7 +8,7 @@
   align-items: center;
   font-family: "Raleway", sans-serif;
   background-image: url("/images/background3.jpg");
-  background-color: white;
+  /* background-color: white; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
