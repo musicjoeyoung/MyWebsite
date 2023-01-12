@@ -13,7 +13,8 @@ const HamburgerMenu = () => {
             alt="JY logo"
             width={50}
             height={50}
-            priority
+            priority:true
+            placeholder="empty"
           />
         </Link>
       </div>
