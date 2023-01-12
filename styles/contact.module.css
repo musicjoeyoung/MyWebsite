@@ -24,7 +24,7 @@
 
 .glowOnHover {
   width: 100%;
-  height: 50px;
+  height: 30px;
   border: none;
   outline: none;
   color: #fff;
@@ -46,7 +46,7 @@
   content: "";
   background: linear-gradient(45deg, #073b4c, #118ab2, #546a7b, #c5cfd6);
   position: absolute;
-  top: -2px;
+  top: 8px;
   left: -2px;
   background-size: 400%;
   z-index: -1;
@@ -116,5 +116,9 @@
   }
   .glowOnHover:before {
     opacity: 1;
+  }
+  .glowOnHover {
+    width: 75%;
+    margin: 10% 0% 0% 12.5%;
   }
 }

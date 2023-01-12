@@ -284,7 +284,7 @@ const homePage = () => {
         <h2>Relevant Experience</h2>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            Wunderkind – Software Engineer - Jan 2022 - Jan 2023
+            Software Engineer - Wunderkind – New York, NY - Jan 2022 - Jan 2023
             <ul>
               <li>
                 Successfully integrated internal platform with client campaigns
@@ -307,7 +307,7 @@ const homePage = () => {
             </ul>
           </li>
           <li className={styles.li}>
-            Freelance Web Designer & Manager - Mar 2020 - current
+            Freelance Web Designer & Manager - New York, NY - Mar 2020 - current
             <ul>
               <li>
                 Designs, builds, and maintains various websites for clients
@@ -316,7 +316,7 @@ const homePage = () => {
             </ul>
           </li>
           <li className={styles.li}>
-            US Army, Reserves - Web Designer & Manager - Nov 2004 - current
+            Web Designer & Manager - US Army, Reserves - Nov 2004 - current
             <ul>
               <li>
                 Website Manager - Designs, builds, and maintains website for the

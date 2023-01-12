@@ -12,10 +12,10 @@ const Contact = () => {
           I&#39;m always looking to collaborate on projects that improve the
           user experience and help make the world a bit better.
         </p>
-        <h3 className={styles.h3}>
+        <h3 /* className={styles.h3} */ className={styles.glowOnHover}>
           <a
             href="mailto:joseph.m.young2@gmail.com"
-            className={styles.glowOnHover}
+            /* className={styles.glowOnHover} */
           >
             Reach out to say hello!
           </a>
