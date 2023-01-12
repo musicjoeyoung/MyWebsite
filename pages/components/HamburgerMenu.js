@@ -9,7 +9,7 @@ const HamburgerMenu = () => {
       <div className={styles.logo}>
         <Link href="/">
           <Image
-            src="/images/favicon.png"
+            src="/images/faviconCompress.png"
             alt="JY logo"
             width={50}
             height={50}
