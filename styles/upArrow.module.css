@@ -98,3 +98,9 @@
     background-position: 0 0;
   }
 }
+@media (max-width: 646px) {
+  .img {
+    width: 30px;
+    height: 55px;
+  }
+}
