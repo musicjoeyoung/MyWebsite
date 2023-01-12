@@ -14,7 +14,7 @@ const homePage = () => {
           <div className={styles.logo}>
             <Link href="/">
               <Image
-                src="/images/favicon.ico"
+                src="/images/faviconCompress.png"
                 alt="JY logo"
                 width={50}
                 height={50}
