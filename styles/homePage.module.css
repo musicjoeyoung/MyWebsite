@@ -374,7 +374,6 @@
   .parallax,
   .parallax2 {
     min-height: 20px;
-    background-color: rgb(237, 219, 219);
   }
   .links .glowOnHover:before {
     opacity: 1;
