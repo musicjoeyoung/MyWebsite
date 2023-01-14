@@ -6,7 +6,7 @@ import Image from "next/image";
 
 let words = [
     " fullstack software engineer",
-    " javascript, jQuery, CSS, HTML",
+    " Javascript, jQuery, CSS, HTML",
     " pretty cool guy",
     /*  " musician, composer, performer",
     " pretty cool guy", */
