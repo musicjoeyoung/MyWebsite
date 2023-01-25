@@ -256,6 +256,12 @@ const homePage = () => {
           </p>
           <div className={styles.links}>
             <Link
+              href="https://taupe-starship-4cf747.netlify.app/"
+              className={styles.glowOnHover}
+            >
+              Click here to view
+            </Link>
+            <Link
               href="https://github.com/musicjoeyoung/MusicMemoryGame"
               className={styles.glowOnHover}
             >
@@ -267,12 +273,6 @@ const homePage = () => {
             >
               Medium
             </Link>
-            {/*          <Link
-            href="https://music-memory-game.herokuapp.com/"
-            className={styles.glowOnHover}
-          >
-            Click here to view
-          </Link> */}
           </div>
         </div>
       </div>
