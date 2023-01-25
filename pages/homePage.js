@@ -299,7 +299,7 @@ const homePage = () => {
               className={styles.glowOnHover}
               target="_blank"
             >
-              Weather
+              Weather App
             </Link>
             <Link href="" className={styles.glowOnHover}>
               Github
