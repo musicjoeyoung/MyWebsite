@@ -223,12 +223,14 @@ const homePage = () => {
             <Link
               href="https://github.com/musicjoeyoung/aether"
               className={styles.glowOnHover}
+              target="_blank"
             >
               Github
             </Link>
             {/*           <Link
             href="https://aether-leo.herokuapp.com/sesh"
             className={styles.glowOnHover}
+            target="_blank"
           >
             Click here to view
           </Link> */}
@@ -258,18 +260,21 @@ const homePage = () => {
             <Link
               href="https://taupe-starship-4cf747.netlify.app/"
               className={styles.glowOnHover}
+              target="_blank"
             >
               Click here to view
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MusicMemoryGame"
               className={styles.glowOnHover}
+              target="_blank"
             >
               Github
             </Link>
             <Link
               href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
               className={styles.glowOnHover}
+              target="_blank"
             >
               Medium
             </Link>
@@ -304,15 +309,10 @@ const homePage = () => {
             <Link
               href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
               className={styles.glowOnHover}
+              target="_blank"
             >
               Github
             </Link>
-            {/*          <Link
-            href="https://music-memory-game.herokuapp.com/"
-            className={styles.glowOnHover}
-          >
-            Click here to view
-          </Link> */}
           </div>
         </div>
       </div>
