@@ -4,7 +4,6 @@ import UpArrow from "./UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
-import Weather from "./components/Weather";
 //import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
@@ -290,9 +289,16 @@ const homePage = () => {
               height={500}
             />
           </div>
-          <p>weather app</p>
+          <p>
+            Built within this website and using the OpenWeatherMap API, I built
+            an app to retrieve the weather for any given city.
+          </p>
           <div className={styles.links}>
-            <Link href={"/components/Weather"} className={styles.glowOnHover}>
+            <Link
+              href={"/components/Weather"}
+              className={styles.glowOnHover}
+              target="_blank"
+            >
               Weather
             </Link>
             <Link href="" className={styles.glowOnHover}>

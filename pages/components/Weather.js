@@ -51,9 +51,11 @@ const Weather = () => {
 
   return (
     <div className={styles.main}>
-      <p style={{ marginTop: "-55px" }}>
-        Enter a city name to find the weather!
-      </p>
+      <div>
+        <p style={{ marginTop: "-55px" }}>
+          Enter a city name to find the weather!
+        </p>
+      </div>
       <div className={styles.container}>
         <p>{`${fullDate}`}</p>
         <form onSubmit={handleSubmit} className={styles.form}>
