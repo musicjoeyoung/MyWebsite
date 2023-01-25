@@ -4,6 +4,7 @@ import UpArrow from "./UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
+import Weather from "./components/Weather";
 //import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
@@ -276,7 +277,36 @@ const homePage = () => {
           </div>
         </div>
       </div>
-
+      <div className={styles.parallax2}></div>
+      <div className={styles.testDiv3}>
+        <div>
+          <h3>Weather App</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/WeatherApp.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>weather app</p>
+          <div className={styles.links}>
+            <Link href={"/components/Weather"} className={styles.glowOnHover}>
+              Weather
+            </Link>
+            <Link href="" className={styles.glowOnHover}>
+              Github
+            </Link>
+            {/*          <Link
+            href="https://music-memory-game.herokuapp.com/"
+            className={styles.glowOnHover}
+          >
+            Click here to view
+          </Link> */}
+          </div>
+        </div>
+      </div>
       <div className={styles.parallax}></div>
 
       {/* Experience */}

@@ -75,6 +75,7 @@ export default function Home() {
           objectFit: "cover",
           display: "hidden",
         }}
+        alt="background"
       />
       <main className={styles.main}>
         <div className="word"></div>
