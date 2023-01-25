@@ -10,7 +10,7 @@ const Weather = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     //const API_KEY = "your_api_key_here";
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
     try {
       const { data } = await axios.get(url);
       setWeather(data);
