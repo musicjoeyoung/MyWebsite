@@ -301,7 +301,10 @@ const homePage = () => {
             >
               Weather App
             </Link>
-            <Link href="" className={styles.glowOnHover}>
+            <Link
+              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
+              className={styles.glowOnHover}
+            >
               Github
             </Link>
             {/*          <Link
