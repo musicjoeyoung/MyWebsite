@@ -262,7 +262,7 @@ const homePage = () => {
               className={styles.glowOnHover}
               target="_blank"
             >
-              Click here to view
+              Music Memory
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MusicMemoryGame"
