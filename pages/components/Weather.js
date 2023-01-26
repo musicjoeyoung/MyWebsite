@@ -83,6 +83,8 @@ const Weather = () => {
                 alt="Weather Icon"
                 width={70}
                 height={70}
+                style={{ content: "" }}
+                loading="eager"
               />
             </div>
             <p>Temperature: {weather.main.temp.toFixed(0)}</p>
