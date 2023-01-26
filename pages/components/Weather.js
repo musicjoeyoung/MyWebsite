@@ -79,7 +79,7 @@ const Weather = () => {
             >
               <h2>Weather in {weather.name}</h2>
               <Image
-                src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+                src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
                 alt="Weather Icon"
                 width={70}
                 height={70}
