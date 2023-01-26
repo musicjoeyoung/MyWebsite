@@ -1,12 +1,12 @@
-.img {
+/* .img {
   opacity: 1;
   transition: opacity 0.5s;
-}
+} */
 
-.img[imageLoaded="false"] {
+/* .img[imageLoaded="false"] {
   opacity: 0;
 }
-
+ */
 .main {
   min-height: 100vh;
   flex: 1;
