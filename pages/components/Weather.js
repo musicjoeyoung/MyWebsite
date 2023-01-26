@@ -4,12 +4,15 @@ import styles from "styles/weather.module.css";
 import Image from "next/image";
 
 const Weather = () => {
-  const [city, setCity] = useState("");
+  //const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
+
+  const [zipCode, setZipCode] = useState("");
+  const [countryCode, setCountryCode] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},${countryCode}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
     try {
       const { data } = await axios.get(url);
       setWeather(data);
@@ -52,7 +55,7 @@ const Weather = () => {
     <div className={styles.main}>
       <div>
         <p style={{ marginTop: "-55px" }}>
-          Enter a city name to find the weather!
+          Enter a zip code name to find the weather!
         </p>
       </div>
       <div className={styles.container}>
@@ -60,9 +63,9 @@ const Weather = () => {
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             type="text"
-            placeholder="Enter a city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
+            placeholder="Enter a zip code"
+            value={zipCode}
+            onChange={(e) => setZipCode(e.target.value)}
             className={styles.input}
           />
           <button type="submit">Get Weather</button>
