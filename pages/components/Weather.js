@@ -75,6 +75,7 @@ const Weather = () => {
             <div
               style={{
                 display: "flex",
+                justifyContent: "center",
               }}
             >
               <h2>Weather in {weather.name}</h2>
