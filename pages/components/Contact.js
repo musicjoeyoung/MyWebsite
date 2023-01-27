@@ -14,7 +14,7 @@ const Contact = () => {
         </p>
         <h3 /* className={styles.h3} */ className={styles.glowOnHover}>
           <a
-            href='mailto:joseph.m.young2@gmail.com'
+            href="mailto:joseph.m.young2@gmail.com"
             /* className={styles.glowOnHover} */
           >
             Reach out to say hello!
@@ -23,39 +23,41 @@ const Contact = () => {
 
         <div className={styles.iconContainer}>
           <a
-            href='https://www.linkedin.com/in/joseph-m-young/'
-            target='_blank'
+            href="https://www.linkedin.com/in/joseph-m-young/"
+            target="_blank"
+            rel="noreferrer"
             /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}
-              src='/images/linkedinIcon.png'
-              alt='LinkedIn'
+              src="/images/linkedinIcon.png"
+              alt="LinkedIn"
               width={30}
               height={30}
             />
           </a>
           <a
-            href='https://github.com/musicjoeyoung'
-            target='_blank'
+            href="https://github.com/musicjoeyoung"
+            target="_blank"
+            rel="noreferrer"
             /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}
-              src='/images/githubIcon.png'
-              alt='Github'
+              src="/images/githubIcon.png"
+              alt="Github"
               width={30}
               height={30}
             />
           </a>
           <a
-            href='mailto:joseph.m.young2@gmail.com'
+            href="mailto:joseph.m.young2@gmail.com"
             /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}
-              src='/images/emailIcon.png'
-              alt='Email'
+              src="/images/emailIcon.png"
+              alt="Email"
               width={30}
               height={30}
             />
