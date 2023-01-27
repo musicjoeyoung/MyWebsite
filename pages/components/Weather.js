@@ -55,7 +55,7 @@ const Weather = () => {
     <div className={styles.main}>
       <div>
         <p style={{ marginTop: "-75px" }}>
-          Enter a zip code name to find the weather!
+          Enter a zip code to find the weather!
         </p>
       </div>
       <div className={styles.container}>
