@@ -14,7 +14,7 @@
   color: white;
   padding: 7rem;
   align-items: flex-start;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 .container {
@@ -81,6 +81,6 @@
 }
 @media screen and (max-height: 550px) {
   .background {
-    height: 130vh;
+    height: 200vh;
   }
 }
