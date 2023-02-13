@@ -316,6 +316,45 @@ const homePage = () => {
           </div>
         </div>
       </div>
+
+      <div className={styles.parallax2}></div>
+      <div className={styles.testDiv3}>
+        <div>
+          <h3>CRUD App</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/CRUD-MERN.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>
+            Built with a MERN stack, this app demonstrates use of fullstack
+            software engineering. You can easily add and delete users, and order
+            them according to different criteria, including username, first
+            name, last name, and age. Additionally, this app allows for
+            passwords that are entered to be hashed and stored securely.
+          </p>
+          <div className={styles.links}>
+            <Link
+              href={"https://dapper-licorice-657a3f.netlify.app/"}
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              CRUD App
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/MERN"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
+      </div>
       <div className={styles.parallax}></div>
 
       {/* Experience */}
