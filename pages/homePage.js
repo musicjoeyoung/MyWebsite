@@ -1,9 +1,9 @@
-import styles from '../styles/homePage.module.css';
-import HamburgerMenu from './components/HamburgerMenu';
-import UpArrow from './UpArrow.js';
-import Contact from './components/Contact.js';
-import Link from 'next/link';
-import Image from 'next/image';
+import styles from "../styles/homePage.module.css";
+import HamburgerMenu from "./components/HamburgerMenu";
+import UpArrow from "./UpArrow.js";
+import Contact from "./components/Contact.js";
+import Link from "next/link";
+import Image from "next/image";
 //import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
@@ -12,10 +12,10 @@ const homePage = () => {
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <Link href='/'>
+            <Link href="/">
               <Image
-                src='/images/faviconCompress.png'
-                alt='JY logo'
+                src="/images/faviconCompress.png"
+                alt="JY logo"
                 width={50}
                 height={50}
               />
@@ -26,36 +26,36 @@ const homePage = () => {
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
-                <Link href='/homePage' className={styles.glowOnHover}>
+                <Link href="/homePage" className={styles.glowOnHover}>
                   Home
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href='#bio' className={styles.glowOnHover}>
+                <Link href="#bio" className={styles.glowOnHover}>
                   About
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href='#projects' className={styles.glowOnHover}>
+                <Link href="#projects" className={styles.glowOnHover}>
                   Projects
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href='#experience' className={styles.glowOnHover}>
+                <Link href="#experience" className={styles.glowOnHover}>
                   Experience
                 </Link>
               </li>
               <li className={styles.li}>
                 <Link
-                  href='/images/JosephYoung_Resume_FrontEndDeveloper.pdf'
+                  href="/images/JosephYoung_Resume_FrontEndDeveloper.pdf"
                   className={styles.glowOnHover}
-                  target='_blank'
+                  target="_blank"
                 >
                   Resume
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href='#contact' className={styles.glowOnHover}>
+                <Link href="#contact" className={styles.glowOnHover}>
                   Contact
                 </Link>
               </li>
@@ -66,8 +66,8 @@ const homePage = () => {
       </header>
       <div className={styles.main}>
         {/* <h2 className={styles.welcome}>Hello, my name is </h2> */}
-        <h1 className={styles.welcome} style={{ fontSize: '60px' }}>
-          Joseph Young{' '}
+        <h1 className={styles.welcome} style={{ fontSize: "60px" }}>
+          Joseph Young{" "}
         </h1>
         <p className={styles.welcome}>
           Software engineer specializing in building and testing exceptional
@@ -76,13 +76,13 @@ const homePage = () => {
       </div>
       <div className={styles.parallax}></div>
       {/* Bio */}
-      <div className={styles.testDiv} id='bio'>
+      <div className={styles.testDiv} id="bio">
         <h2>About Me</h2>
         <div className={styles.bio}>
           <Image
             className={styles.bioPic}
-            src='/images/Joe.png'
-            alt='Picture of the author'
+            src="/images/Joe.png"
+            alt="Picture of the author"
             width={500}
             height={500}
           />
@@ -92,7 +92,7 @@ const homePage = () => {
               debugging, testing, and troubleshooting in application development
               processes. I work primarily in Javascript with HTML, CSS, React,
               Redux, Node, Express, PostgreSQL, and have a special interest in
-              Web Accessiblity.
+              Web Accessibility.
               <br />
               <br />I design, build, and manage websites for a number of
               clients. In addition to graduating from Fullstack Academy&#39;s
@@ -106,78 +106,78 @@ const homePage = () => {
             <div className={styles.iconContainer}>
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-                alt='Javscript'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="Javscript"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg'
-                alt='HTML5'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                alt="HTML5"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg'
-                alt='CSS3'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                alt="CSS3"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-                alt='React JS'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                alt="React JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'
-                alt='Next JS'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'
-                alt='Canva'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+                alt="Canva"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
-                alt='Express'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="Express"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
-                alt='Node JS'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node JS"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg'
-                alt='PostgreSQL'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+                alt="PostgreSQL"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
-                alt='Python'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
                 width={60}
                 height={60}
               />
               <Image
                 className={styles.icon}
-                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg'
-                alt='jQuery'
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
+                alt="jQuery"
                 width={60}
                 height={60}
               />
@@ -191,7 +191,7 @@ const homePage = () => {
       <div className={styles.parallax}></div>
       {/* Projects */}
 
-      <div className={styles.testDiv4} id='projects'>
+      <div className={styles.testDiv4} id="projects">
         <h2>Select Projects</h2>
 
         <div>
@@ -199,8 +199,8 @@ const homePage = () => {
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src='/images/Aether.png'
-              alt='Picture of the project'
+              src="/images/Aether.png"
+              alt="Picture of the project"
               width={500}
               height={500}
             />
@@ -221,9 +221,9 @@ const homePage = () => {
           </p>
           <div className={styles.links}>
             <Link
-              href='https://github.com/musicjoeyoung/aether'
+              href="https://github.com/musicjoeyoung/aether"
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Github
             </Link>
@@ -244,8 +244,8 @@ const homePage = () => {
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src='/images/MusicMemory.png'
-              alt='Picture of the project'
+              src="/images/MusicMemory.png"
+              alt="Picture of the project"
               width={500}
               height={500}
             />
@@ -258,23 +258,23 @@ const homePage = () => {
           </p>
           <div className={styles.links}>
             <Link
-              href='https://taupe-starship-4cf747.netlify.app/'
+              href="https://taupe-starship-4cf747.netlify.app/"
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Music Memory
             </Link>
             <Link
-              href='https://github.com/musicjoeyoung/MusicMemoryGame'
+              href="https://github.com/musicjoeyoung/MusicMemoryGame"
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Github
             </Link>
             <Link
-              href='https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35'
+              href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Medium
             </Link>
@@ -288,8 +288,8 @@ const homePage = () => {
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src='/images/weatherApp.png'
-              alt='Picture of the project'
+              src="/images/weatherApp.png"
+              alt="Picture of the project"
               width={500}
               height={500}
             />
@@ -300,16 +300,16 @@ const homePage = () => {
           </p>
           <div className={styles.links}>
             <Link
-              href={'/components/Weather'}
+              href={"/components/Weather"}
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Weather App
             </Link>
             <Link
-              href='https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js'
+              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
               className={styles.glowOnHover}
-              target='_blank'
+              target="_blank"
             >
               Github
             </Link>
@@ -358,7 +358,7 @@ const homePage = () => {
       <div className={styles.parallax}></div>
 
       {/* Experience */}
-      <div className={styles.testDiv5} id='experience'>
+      <div className={styles.testDiv5} id="experience">
         <h2>Relevant Experience</h2>
         <ul className={styles.ul}>
           <li className={styles.li}>
@@ -416,7 +416,7 @@ const homePage = () => {
       <div className={styles.parallax}></div>
 
       {/* Contact */}
-      <div className={styles.testDiv6} id='contact'>
+      <div className={styles.testDiv6} id="contact">
         <Contact />
       </div>
 
