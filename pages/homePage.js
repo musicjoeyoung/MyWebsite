@@ -238,6 +238,7 @@ const homePage = () => {
         </div>
       </div>
       <div className={styles.parallax2}></div>
+      {/* Music Memory */}
       <div className={styles.testDiv2}>
         <div>
           <h3>Music Memory</h3>
@@ -282,6 +283,7 @@ const homePage = () => {
         </div>
       </div>
       <div className={styles.parallax2}></div>
+      {/* Weather App */}
       <div className={styles.testDiv3}>
         <div>
           <h3>Weather App</h3>
@@ -318,6 +320,7 @@ const homePage = () => {
       </div>
 
       <div className={styles.parallax2}></div>
+      {/* CRUD App */}
       <div className={styles.testDiv3}>
         <div>
           <h3>CRUD App</h3>
@@ -347,6 +350,76 @@ const homePage = () => {
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MERN"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.parallax2}></div>
+      {/* Seasonle */}
+      <div className={styles.testDiv2}>
+        <div>
+          <h3>Seasonle</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/SeasonleGame.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>
+            Inspired by Wordle, this game involves guessing the correct, best
+            season out of all four seasons. 😂
+          </p>
+          <div className={styles.links}>
+            <Link
+              href="https://wonderful-ganache-6ce0a6.netlify.app/"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Seasonle
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/Seasonle-Game"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.parallax2}></div>
+
+      {/* Countdown Timer */}
+      <div className={styles.testDiv2}>
+        <div>
+          <h3>Countdown Timer</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/countdownTimer.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>A simple, animated countdown timer</p>
+          <div className={styles.links}>
+            <Link
+              href="/components/CountdownTimer"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Countdown Timer
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/Seasonle-Game"
               className={styles.glowOnHover}
               target="_blank"
             >
