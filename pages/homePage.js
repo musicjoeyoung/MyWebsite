@@ -419,7 +419,7 @@ const homePage = () => {
               Countdown Timer
             </Link>
             <Link
-              href="https://github.com/musicjoeyoung/Seasonle-Game"
+              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/CountdownTimer.js"
               className={styles.glowOnHover}
               target="_blank"
             >
