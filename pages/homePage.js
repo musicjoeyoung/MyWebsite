@@ -193,47 +193,36 @@ const homePage = () => {
 
       <div className={styles.testDiv4} id="projects">
         <h2>Select Projects</h2>
-
         <div>
-          <h3>Aether</h3>
+          <h3>Weather App</h3>
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src="/images/Aether.png"
+              src="/images/weatherApp.png"
               alt="Picture of the project"
               width={500}
               height={500}
             />
           </div>
           <p>
-            Built as a final capstone project at the Fullstack Academy, this is
-            an audio-visual music collaboration experience. Our goal was to
-            create a loosely structured audio visual “jam” space for users to
-            compose and visualize music with a variety of instruments
-            collaboratively in a live session. When collaborative art cannot be
-            made in-person, this application can bring people together in a
-            creative environment. This space serves as a tool to make music in a
-            live 3-D session.
-            <br />
-            <br />
-            Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
-            Redux, Express, Framer/Framer-Motion
+            Built within this website and using the OpenWeatherMap API, I built
+            an app to retrieve the weather for any given city.
           </p>
           <div className={styles.links}>
             <Link
-              href="https://github.com/musicjoeyoung/aether"
+              href={"/components/Weather"}
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Weather App
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
               className={styles.glowOnHover}
               target="_blank"
             >
               Github
             </Link>
-            {/*           <Link
-            href="https://aether-leo.herokuapp.com/sesh"
-            className={styles.glowOnHover}
-            target="_blank"
-          >
-            Click here to view
-          </Link> */}
           </div>
         </div>
       </div>
@@ -286,35 +275,45 @@ const homePage = () => {
       {/* Weather App */}
       <div className={styles.testDiv3}>
         <div>
-          <h3>Weather App</h3>
+          <h3>Aether</h3>
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src="/images/weatherApp.png"
+              src="/images/Aether.png"
               alt="Picture of the project"
               width={500}
               height={500}
             />
           </div>
           <p>
-            Built within this website and using the OpenWeatherMap API, I built
-            an app to retrieve the weather for any given city.
+            Built as a final capstone project at the Fullstack Academy, this is
+            an audio-visual music collaboration experience. Our goal was to
+            create a loosely structured audio visual “jam” space for users to
+            compose and visualize music with a variety of instruments
+            collaboratively in a live session. When collaborative art cannot be
+            made in-person, this application can bring people together in a
+            creative environment. This space serves as a tool to make music in a
+            live 3-D session.
+            <br />
+            <br />
+            Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
+            Redux, Express, Framer/Framer-Motion
           </p>
           <div className={styles.links}>
             <Link
-              href={"/components/Weather"}
-              className={styles.glowOnHover}
-              target="_blank"
-            >
-              Weather App
-            </Link>
-            <Link
-              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
+              href="https://github.com/musicjoeyoung/aether"
               className={styles.glowOnHover}
               target="_blank"
             >
               Github
             </Link>
+            {/*           <Link
+            href="https://aether-leo.herokuapp.com/sesh"
+            className={styles.glowOnHover}
+            target="_blank"
+          >
+            Click here to view
+          </Link> */}
           </div>
         </div>
       </div>
