@@ -273,7 +273,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax2}></div>
       {/* Weather App */}
-      <div className={styles.testDiv3}>
+      {/*   <div className={styles.testDiv3}>
         <div>
           <h3>Aether</h3>
           <div className={styles.projectImgContainer}>
@@ -307,18 +307,11 @@ const homePage = () => {
             >
               Github
             </Link>
-            {/*           <Link
-            href="https://aether-leo.herokuapp.com/sesh"
-            className={styles.glowOnHover}
-            target="_blank"
-          >
-            Click here to view
-          </Link> */}
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles.parallax2}></div>
+      {/* <div className={styles.parallax2}></div> */}
       {/* CRUD App */}
       <div className={styles.testDiv3}>
         <div>
