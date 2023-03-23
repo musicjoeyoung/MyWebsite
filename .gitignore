@@ -37,3 +37,6 @@ next-env.d.ts
 
 #node_modules
 node_modules
+
+#weather_api_key
+.env
