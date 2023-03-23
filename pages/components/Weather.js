@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import styles from 'styles/weather.module.css';
-import Image from 'next/image';
+import React, { useState } from "react";
+import axios from "axios";
+import styles from "styles/weather.module.css";
+import Image from "next/image";
 
 const Weather = () => {
   //const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
 
-  const [zipCode, setZipCode] = useState('');
-  const [countryCode, setCountryCode] = useState('');
+  const [zipCode, setZipCode] = useState("");
+  const [countryCode, setCountryCode] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,39 +23,39 @@ const Weather = () => {
 
   const d = new Date();
   const weekday = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
   const day = weekday[d.getDay()];
   const month = months[d.getMonth()];
   const date = d.getDate();
   const year = d.getFullYear();
-  const fullDate = day + ', ' + month + ' ' + date + ', ' + year;
+  const fullDate = day + ", " + month + " " + date + ", " + year;
 
   return (
     <div className={styles.background}>
       <div className={styles.main}>
         <div className={styles.zipCode}>
-          <p style={{ marginTop: '-75px' }}>
+          <p style={{ marginTop: "-75px" }}>
             Enter a zip code to find the weather!
           </p>
         </div>
@@ -63,30 +63,30 @@ const Weather = () => {
           <p>{`${fullDate}`}</p>
           <form onSubmit={handleSubmit} className={styles.form}>
             <input
-              type='text'
-              placeholder='Enter a zip code'
+              type="text"
+              placeholder="Enter a zip code"
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
               className={styles.input}
             />
-            <button type='submit'>Get Weather</button>
+            <button type="submit">Get Weather</button>
           </form>
           {weather ? (
             <div className={styles.weather}>
               <div
                 style={{
-                  display: 'flex',
-                  justifyContent: 'center',
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
                 <h2>Weather in {weather.name}</h2>
                 <Image
                   src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-                  alt='Weather Icon'
+                  alt="Weather Icon"
                   width={70}
                   height={70}
-                  style={{ content: '' }}
-                  loading='eager'
+                  style={{ content: "" }}
+                  loading="eager"
                 />
               </div>
               <p>Temperature: {weather.main.temp.toFixed(0)}</p>
