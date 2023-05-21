@@ -124,8 +124,9 @@ function CountdownTimer() {
       {timer > 0 ? (
         <div className={styles.floatZoom}>
           <h2 className={styles.floatZoom__h2}>
-            {Math.floor(timer / 3600)}h {Math.floor((timer % 3600) / 60)}m{" "}
-            {timer % 60}s
+            {Math.floor(timer / 3600)} : {/* // prettier-ignore */}
+            {Math.floor((timer % 3600) / 60)} : {/* // prettier-ignore */}
+            {timer % 60}
           </h2>
         </div>
       ) : (
