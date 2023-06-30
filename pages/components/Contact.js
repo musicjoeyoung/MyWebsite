@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/contact.module.css";
+import styles from "/styles/contact.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 

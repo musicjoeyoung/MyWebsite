@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import styles from "styles/weather.module.css";
+import styles from "styles/weather.module.scss";
 import Image from "next/image";
 
 const Weather = () => {
@@ -54,25 +54,30 @@ const Weather = () => {
   return (
     <div className={styles.background}>
       <div className={styles.main}>
-        <div className={styles.zipCode}>
+        <div className={styles.main__zipCode}>
           <p style={{ marginTop: "-75px" }}>
             Enter a zip code to find the weather!
           </p>
         </div>
-        <div className={styles.container}>
+        <div className={styles.weather_container}>
           <p>{`${fullDate}`}</p>
-          <form onSubmit={handleSubmit} className={styles.form}>
+          <form
+            onSubmit={handleSubmit}
+            className={styles.weather_container__form}
+          >
             <input
               type="text"
               placeholder="Enter a zip code"
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
-              className={styles.input}
+              className={styles.weather_container__input}
             />
-            <button type="submit">Get Weather</button>
+            <button className={styles.weather_container__button} type="submit">
+              Get Weather
+            </button>
           </form>
           {weather ? (
-            <div className={styles.weather}>
+            <div /* className={styles.weather} */>
               <div
                 style={{
                   display: "flex",

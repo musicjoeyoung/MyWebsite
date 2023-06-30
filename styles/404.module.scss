@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid black;
+  &__h1 {
+    text-align: center;
+  }
+  &__a {
+    color: inherit;
+    text-decoration: underline;
+    background-color: lightblue;
+    border-radius: 13px;
+    padding: 3px 11px 3px 11px;
+  }
+}
