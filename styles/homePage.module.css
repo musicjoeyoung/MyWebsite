@@ -449,3 +449,8 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 1000px) {
+  .links {
+    margin-top: calc(100vh - 95%)
+  }
+}
