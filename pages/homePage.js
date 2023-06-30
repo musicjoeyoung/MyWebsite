@@ -4,7 +4,6 @@ import UpArrow from "./UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
-import Calculator from "./components/Calculator";
 
 const homePage = () => {
   return (

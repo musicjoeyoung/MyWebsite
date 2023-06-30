@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "/Users/musicjoeyoung/Desktop/Coding/Javascript/NextJS/website/styles/calculator.module.scss";
+import styles from "../../styles/calculator.module.scss";
 
 const Calculator: React.FC = () => {
   const [result, setResult] = useState<string>("");
