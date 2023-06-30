@@ -4,7 +4,7 @@ import UpArrow from "./UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
-//import Calculator from "./components/calculator/Calculator";
+import Calculator from "./components/Calculator";
 
 const homePage = () => {
   return (
@@ -420,8 +420,40 @@ const homePage = () => {
           </div>
         </div>
       </div>
-      <div className={styles.parallax}></div>
+      <div className={styles.parallax2}></div>
 
+      {/* Countdown Timer */}
+      <div className={styles.testDiv2}>
+        <div>
+          <h3>Countdown Timer</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/calculator.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>A basic calculator built with Typescript</p>
+          <div className={styles.links}>
+            <Link
+              href="/components/Calculator"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Calculator
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Calculator.tsx"
+              className={styles.glowOnHover}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
+      </div>
       {/* Experience */}
       <div className={styles.testDiv5} id="experience">
         <h2>Relevant Experience</h2>
