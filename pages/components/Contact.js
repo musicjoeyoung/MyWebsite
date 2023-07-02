@@ -3,6 +3,7 @@ import styles from "/styles/contact.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import emailjs from '@emailjs/browser';
+import  {YOUR_SERVICE_ID ,YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } from "pages/components/config/config.js"
 
 const Contact = () => {
   const form = useRef();
@@ -10,7 +11,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
+    emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
