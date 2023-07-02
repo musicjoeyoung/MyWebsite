@@ -1,3 +1,26 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &__input{
+      width: 14rem;
+      margin: 0 auto;
+    }
+    &__textarea{
+      width: 25rem;
+      margin: 0 auto;
+      height: 8rem;
+
+      @media screen and (max-width: 576px) {
+        width:18rem;
+      }
+    }
+    &__button{
+      width: 10rem;
+      margin: 1rem auto;
+    }
+}
 .container {
   text-align: center;
   margin-top: 15%;
