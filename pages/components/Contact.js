@@ -1,4 +1,4 @@
-import {useRef} from "react";
+import { useRef, useState } from "react";
 import styles from "/styles/contact.module.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +7,8 @@ import  {YOUR_SERVICE_ID ,YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } from "pages/compon
 
 const Contact = () => {
   const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,8 +16,13 @@ const Contact = () => {
     emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
+          setIsSubmitted(true);
+          setIsSuccess(true);
+          form.current.reset();
       }, (error) => {
           console.log(error.text);
+          setIsSubmitted(true);
+          setIsSuccess(false);
       });
   };
 
@@ -45,6 +52,13 @@ const Contact = () => {
           <textarea className={styles.form__textarea} name="message" />
           <input className={styles.form__button} type="submit" value="Send" />
         </form>
+
+        {isSubmitted && (
+          <div className={isSuccess ? styles.successMessage : styles.errorMessage}>
+            {isSuccess ? "Message sent successfully!" : "Failed to send the message. Please try again."}
+          </div>
+        )}
+
 
         <div className={styles.iconContainer}>
           <a
