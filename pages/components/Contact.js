@@ -3,7 +3,7 @@ import styles from "/styles/contact.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import emailjs from '@emailjs/browser';
-import  {YOUR_SERVICE_ID ,YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } from "../components/config/config.js"
+import  {YOUR_SERVICE_ID ,YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } from "../config/config.js"
 
 const Contact = () => {
   const form = useRef();
