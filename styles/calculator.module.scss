@@ -10,59 +10,65 @@
   margin: 5rem auto;
   padding: 10px;
   font-family: Arial, sans-serif;
+
+    &__input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__button {
+      color:black;
+      flex-grow: 1;
+      padding: 10px;
+      margin: 5px;
+      font-size: 18px;
+      text-align: center;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      font-family: "Raleway", sans-serif, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+    }
+
+    &__button:hover {
+      background-color: #e0e0e0;
+    }
+
+    &__button--operator {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+
+    &__button--operator:hover {
+      background-color: #e8e8e8;
+    }
 }
 
-.calculator__input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
 
-.calculator__row {
-  display: flex;
-  justify-content: space-between;
-}
 
-.calculator__button {
-  flex-grow: 1;
-  padding: 10px;
-  margin: 5px;
-  font-size: 18px;
-  text-align: center;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-family: "Raleway", sans-serif, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-}
-
-.calculator__button:hover {
-  background-color: #e0e0e0;
-}
-
-.calculator__button--operator {
-  background-color: #f8f8f8;
-  font-weight: bold;
-}
-
-.calculator__button--operator:hover {
-  background-color: #e8e8e8;
-}
 .answerContainer {
   text-align: center;
+
+  &__answer {
+    width: 40%;
+    margin: 5rem auto;
+    border: 1px solid white;
+    padding: 2rem 0rem;
+    color: white;
+    height: 6rem;
+  }
 }
 
-.answerContainer__answer {
-  width: 40%;
-  margin: 5rem auto;
-  border: 1px solid white;
-  padding: 2rem 0rem;
-  color: white;
-}
 .description {
   text-align: center;
   color: white;
