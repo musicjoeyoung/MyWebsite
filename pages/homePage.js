@@ -394,7 +394,7 @@ const homePage = () => {
           <div className={styles.projectImgContainer}>
             <Image
               className={styles.projectImg}
-              src="/images/countdownTimer2.png"
+              src="/images/countdownTimer.png"
               alt="Picture of the project"
               width={500}
               height={500}

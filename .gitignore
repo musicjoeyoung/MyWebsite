@@ -40,3 +40,6 @@ node_modules
 
 #weather_api_key
 .env
+
+#emailjs
+pages/components/config/config.js
