@@ -4,6 +4,7 @@ import UpArrow from "./UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
+import CountdownTimer2 from "./components/CountdownTimer2";
 
 const homePage = () => {
   return (
@@ -530,7 +531,9 @@ const homePage = () => {
       {/* Contact */}
       <div className={styles.testDiv6} id="contact">
         <Contact />
+      <CountdownTimer2/>
       </div>
+
 
       <UpArrow />
     </>
