@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import styles from 'styles/countdowntimer2.module.scss';
 
+
 const CountdownTimer2 = () => {
   const [duration, setDuration] = useState(300);
   const [windowSize, setWindowSize] = useState({ width: undefined, height: undefined });
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,7 +31,8 @@ const CountdownTimer2 = () => {
       // Handle empty input
       setDuration(0);
     } else {
-      const inputDuration = parseInt(value);
+      const inputDuration = /* parseInt(value); */value;
+      //if ":" is included, how to recognize and parse into hr/min/sec?
       if (isNaN(inputDuration)) {
         // Handle input with colon
         const [minutes, seconds] = value.split(':');
@@ -85,6 +88,7 @@ const CountdownTimer2 = () => {
         value={formatTime(duration)}
         placeholder="Enter duration (e.g., 5:00 or 59 seconds)"
         className={styles.container__input}
+        
       />
 
       <CountdownCircleTimer
@@ -95,6 +99,10 @@ const CountdownTimer2 = () => {
         colorsTime={colorsTimeArray}
         size={windowSize.width < 525 ? 300 : 500}
         strokeWidth={15}
+      /*   onComplete={() => {
+          //console.log('complete');
+          //setDuration(10)
+        }} */
       >
         {({ remainingTime }) => formatTime(remainingTime)}
       </CountdownCircleTimer>

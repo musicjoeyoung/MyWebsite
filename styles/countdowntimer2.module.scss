@@ -2,8 +2,10 @@
     margin: 0 auto;
     text-align: center;
     width: fit-content;
-    font-size: 4rem
-}
-.input{
-  margin-bottom: 3rem;
+    font-size: 4rem;
+
+    &__input{
+      margin-bottom: 3rem;
+    }
+
 }
