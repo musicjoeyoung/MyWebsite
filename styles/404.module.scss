@@ -1,13 +1,36 @@
-.container {
-  border: 1px solid black;
-  &__h1 {
+.eraserContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+
+    &__h1 {
     text-align: center;
+    color: white;
+    background-color: black;
+    width: 75%;
   }
-  &__a {
-    color: inherit;
-    text-decoration: underline;
-    background-color: lightblue;
-    border-radius: 13px;
-    padding: 3px 11px 3px 11px;
+}
+.flash{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 9999;
+  animation: flash-animation 0.7s;
+  -webkit-animation: flash-animation 0.7s;
+}
+@keyframes flash-animation {
+  0%{
+    opacity: 1;
+  }  
+  100% {
+    opacity: 0;
   }
 }
