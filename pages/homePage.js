@@ -5,6 +5,7 @@ import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const homePage = () => {
   return (
     <>
@@ -531,6 +532,7 @@ const homePage = () => {
       <div className={styles.testDiv6} id="contact">
         <Contact />
       </div>
+
 
       <UpArrow />
     </>
