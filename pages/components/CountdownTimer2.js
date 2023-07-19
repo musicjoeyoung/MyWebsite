@@ -16,7 +16,7 @@ const CountdownTimer2 = () => {
       });
     };
 
-    handleResize(); // Initial window size
+    handleResize(); 
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -24,23 +24,19 @@ const CountdownTimer2 = () => {
     };
   }, []);
 
-  const handleDurationChange = (e) => {
+   const handleDurationChange = (e) => {
     const value = e.target.value;
 
     if (value === '') {
-      // Handle empty input
       setDuration(0);
     } else {
-      const inputDuration = /* parseInt(value); */value;
-      //if ":" is included, how to recognize and parse into hr/min/sec?
-      if (isNaN(inputDuration)) {
-        // Handle input with colon
-        const [minutes, seconds] = value.split(':');
-        const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
-        setDuration(totalSeconds);
+      const [minutes, seconds] = value.split(":")
+      const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds)
+      
+      if (isNaN(totalSeconds) || totalSeconds < 0 || totalSeconds > 3599) {
+        setDuration(0);
       } else {
-        // Handle input without colon
-        setDuration(inputDuration);
+        setDuration(totalSeconds);
       }
     }
   };
@@ -51,7 +47,7 @@ const CountdownTimer2 = () => {
       const seconds = time % 60;
       return `${minutes}:${seconds.toString().padStart(2, '0')}`;
     }
-    return time;
+    return time.toString();
   };
 
   const colorsArray = [
