@@ -1,6 +1,6 @@
 import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
-import UpArrow from "./UpArrow.js";
+import UpArrow from "./components/UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
@@ -127,6 +127,13 @@ const homePage = () => {
               />
               <Image
                 className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt="SASS"
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
                 alt="React JS"
                 width={60}
@@ -169,6 +176,20 @@ const homePage = () => {
               />
               <Image
                 className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                 alt="Python"
                 width={60}
@@ -178,6 +199,13 @@ const homePage = () => {
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
                 alt="jQuery"
+                width={60}
+                height={60}
+              />
+              <Image
+                className={styles.icon}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
                 width={60}
                 height={60}
               />
