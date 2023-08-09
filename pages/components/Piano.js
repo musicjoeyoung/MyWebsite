@@ -1,4 +1,4 @@
-import styles from "styles/piano.module.scss"
+/* import styles from "styles/piano.module.scss"
 import * as Tone from 'tone'
 import { generatePianoKeys } from './functions/notes';
 import {useEffect, useRef} from "react"
@@ -91,7 +91,7 @@ const playSound = (note) =>{
           onMouseUp={handleMouseUp}
           onMouseOver={handleMouseOver}
           onClick={() => playSound(keyName)}>
-            {/* {keyName} */}
+            {keyName}
           </div>
         );
       })}
@@ -100,3 +100,4 @@ const playSound = (note) =>{
 }
 
 export default Piano
+ */

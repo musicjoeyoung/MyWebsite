@@ -1,4 +1,4 @@
-import styles from 'styles/dronepiano.module.scss'
+/* import styles from 'styles/dronepiano.module.scss'
 import * as Tone from "tone";
 import ParticlesBg from "particles-bg";
 
@@ -55,12 +55,12 @@ const DronePiano = (note) => {
     }
     if (document.getElementById("synthOption").value === "piano") {
       Tone.loaded().then(() => {
-        piano.triggerAttackRelease(`${note}`, 4); //use this number to add a sustain option
+        piano.triggerAttackRelease(`${note}`, 4);
       });
     }
     if (document.getElementById("synthOption").value === "pianoSustain") {
       Tone.loaded().then(() => {
-        piano.triggerAttackRelease(`${note}`, 16); //use this number to add a sustain option
+        piano.triggerAttackRelease(`${note}`, 16);
       });
     }
     if (document.getElementById("synthOption").value === "casio") {
@@ -82,7 +82,7 @@ const DronePiano = (note) => {
       .connect(vol)
       .toDestination();
     Tone.loaded().then(() => {
-      piano.triggerAttackRelease(`${note}`, 32); //use this number to add a sustain option
+      piano.triggerAttackRelease(`${note}`, 32); 
     });
   }
   return (
@@ -152,7 +152,7 @@ const DronePiano = (note) => {
         <div className="circle" onClick={() => playNote("B0")}></div>
         <div className="circle" onClick={() => playNote("C1")}></div>
         <div className="circle" onClick={() => playNote("D1")}></div>
-        {/* black keys */}
+        black keys
         <div className="circle" onClick={() => playNote("Ab0")}></div>
         <div className="circle" onClick={() => playNote("Bb8")}></div>
         <div className="circle" onClick={() => playNote("Gb0")}></div>
@@ -196,7 +196,7 @@ const DronePiano = (note) => {
         <div className="circle" onClick={() => playNote("Gb8")}></div>
         <div className="circle" onClick={() => playNote("Ab8")}></div>
         <div className="circle" onClick={() => playNote("Bb0")}></div>
-        {/* inner drones */}
+        inner drones
         <div className="chromaticDivsMain">
           <select id="synthOption">
             <option value="piano">Piano</option>
@@ -265,3 +265,4 @@ const DronePiano = (note) => {
   );
 }
 export default DronePiano;
+ */

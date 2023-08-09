@@ -8,7 +8,7 @@ import Image from "next/image";
 import NightModeButton from "./components/NightModeButton";
 
 
-const homePage = () => {
+const HomePage = () => {
   const [darkMode, setDarkMode] = useState(true)
   return (
     <>
@@ -573,4 +573,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;
