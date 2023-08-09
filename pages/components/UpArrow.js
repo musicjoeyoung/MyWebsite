@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "styles/upArrow.module.css";
 import Image from "next/image";
 
-const UpArrow = () => {
+const UpArrow = ({darkMode}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Top: 0 takes us all the way back to the top of the page
@@ -35,7 +35,7 @@ const UpArrow = () => {
       {isVisible && (
         <div onClick={scrollToTop} className={styles.upContainer}>
           <Image
-            src="/images/arrow4.png"
+            src={`${darkMode ? '/images/arrow4.png' : '/images/arrowBlack.png'}`}
             className={styles.img}
             alt="Scroll up arrow"
             width={60}

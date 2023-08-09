@@ -94,7 +94,9 @@ const CountdownTimer2 = () => {
         colors={colorsArray}
         colorsTime={colorsTimeArray}
         size={windowSize.width < 525 ? 300 : 500}
-        strokeWidth={15}
+        strokeWidth={20}
+        onUpdate={{remainingTime: 10}}
+
       /*   onComplete={() => {
           //console.log('complete');
           //setDuration(10)
