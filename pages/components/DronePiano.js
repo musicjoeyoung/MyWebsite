@@ -266,3 +266,13 @@ const DronePiano = (note) => {
 }
 export default DronePiano;
  */
+
+import React from 'react'
+
+const DronePiano = () => {
+  return (
+    <div>DronePiano</div>
+  )
+}
+
+export default DronePiano
