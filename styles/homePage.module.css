@@ -11,6 +11,20 @@
   align-items: flex-start;
 }
 
+.dayMode{
+  background-color: white !important;
+  color: #073b4c !important;
+}
+
+.nightDayIcon{
+      background-color: white;
+    border-radius: 1rem;
+    padding: 3px;
+    bottom: 7px;
+    position: relative;
+    left: 22px;
+}
+
 .welcome {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
@@ -197,6 +211,7 @@
   margin-left: -11px;
   text-align: center;
 }
+
 .icon {
   width: 50px;
   margin: 10px;
@@ -387,7 +402,16 @@
   .testDiv p {
     margin-top: 15px;
   }
+  .nightDayIcon{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3px;
+    bottom: 4px;
+    position: relative;
+    left: -1rem;
+  }
 }
+
 
 @media (max-width: 646px) {
   .navLinks {

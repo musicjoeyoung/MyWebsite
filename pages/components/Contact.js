@@ -5,7 +5,7 @@ import Image from "next/image";
 import emailjs from '@emailjs/browser';
 import  {YOUR_SERVICE_ID ,YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } from "../../config/config.js"
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -34,7 +34,7 @@ const Contact = () => {
           I&#39;m always looking to collaborate on projects that improve the
           user experience and help make the world a bit better.
         </p>
-        <h3 /* className={styles.h3} */ className={styles.glowOnHover}>
+        <h3 /* className={styles.h3} */ className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
           <a
             href="mailto:joseph.m.young2@gmail.com"
             /* className={styles.glowOnHover} */
@@ -69,7 +69,7 @@ const Contact = () => {
           >
             <Image
               className={styles.icon}
-              src="/images/linkedinIcon.png"
+              src={`${darkMode ? "/images/linkedinWhite.png" : "/images/linkedinBlack.png"}`}
               alt="LinkedIn"
               width={30}
               height={30}
@@ -83,7 +83,7 @@ const Contact = () => {
           >
             <Image
               className={styles.icon}
-              src="/images/githubIcon.png"
+              src={`${darkMode ? "/images/githubWhite.png" : "/images/githubBlack.png"}`}
               alt="Github"
               width={30}
               height={30}
@@ -95,7 +95,7 @@ const Contact = () => {
           >
             <Image
               className={styles.icon}
-              src="/images/emailIcon.png"
+              src={`${darkMode ? "/images/emailWhite.png" : "/images/emailBlack.png"}`}
               alt="Email"
               width={30}
               height={30}

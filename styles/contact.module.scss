@@ -1,3 +1,8 @@
+.dayMode{
+  background-color: white !important;
+  color: #073b4c !important;
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -50,7 +55,7 @@
   height: 30px;
   border: none;
   outline: none;
-  color: #fff;
+  //color: #fff;
   background: #00000000;
   cursor: pointer;
   position: relative;

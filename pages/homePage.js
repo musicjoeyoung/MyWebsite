@@ -1,15 +1,18 @@
+import { useState } from "react"
 import styles from "../styles/homePage.module.css";
 import HamburgerMenu from "./components/HamburgerMenu";
 import UpArrow from "./components/UpArrow.js";
 import Contact from "./components/Contact.js";
 import Link from "next/link";
 import Image from "next/image";
+import NightModeButton from "./components/NightModeButton";
 
 
 const homePage = () => {
+  const [darkMode, setDarkMode] = useState(true)
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${darkMode ? "" : styles.dayMode}`}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
             <Link href="/">
@@ -21,41 +24,43 @@ const homePage = () => {
               />
             </Link>
             <title>Joseph Young</title>
+            {/* <NightModeButton/> */}
+            {/* <button onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button> */}
           </div>
           {/* NavBar */}
           <div className={styles.navLinks}>
             <ol className={styles.ol}>
               <li className={styles.li}>
-                <Link href="/homePage" className={styles.glowOnHover}>
+                <Link href="/homePage" className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
                   Home
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href="#bio" className={styles.glowOnHover}>
+                <Link href="#bio" className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
                   About
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href="#projects" className={styles.glowOnHover}>
+                <Link href="#projects" className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
                   Projects
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href="#experience" className={styles.glowOnHover}>
+                <Link href="#experience" className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
                   Experience
                 </Link>
               </li>
               <li className={styles.li}>
                 <Link
                   href="/images/JosephYoung_Resume_FrontEndDeveloper.pdf"
-                  className={styles.glowOnHover}
+                  className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
                   target="_blank"
                 >
                   Resume
                 </Link>
               </li>
               <li className={styles.li}>
-                <Link href="#contact" className={styles.glowOnHover}>
+                <Link href="#contact" className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}>
                   Contact
                 </Link>
               </li>
@@ -63,8 +68,9 @@ const homePage = () => {
           </div>
         </nav>
         <HamburgerMenu />
+        <Image src="/images/day-and-night.png" alt="icon" width={30} height={30} className={styles.nightDayIcon} onClick={() => setDarkMode(!darkMode)}/>
       </header>
-      <div className={styles.main}>
+      <div className={`${styles.main} ${darkMode ? "" : styles.dayMode}`}>
         {/* <h2 className={styles.welcome}>Hello, my name is </h2> */}
         <h1 className={styles.welcome} style={{ fontSize: "60px" }}>
           Joseph Young{" "}
@@ -76,7 +82,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax}></div>
       {/* Bio */}
-      <div className={styles.testDiv} id="bio">
+      <div className={`${styles.testDiv} ${darkMode ? "" : styles.dayMode}`} id="bio">
         <h2>About Me</h2>
         <div className={styles.bio}>
           <Image
@@ -103,7 +109,7 @@ const homePage = () => {
               Fun Fact: I am also in the Army Reserves where I am an Executive
               Officer for a military band, and we play lots of wonderful music!
             </p>
-            <div className={styles.iconContainer}>
+            <div className={styles.iconContainer }>
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -219,7 +225,7 @@ const homePage = () => {
       <div className={styles.parallax}></div>
       {/* Projects */}
 
-      <div className={styles.testDiv4} id="projects">
+      <div className={`${styles.testDiv4} ${darkMode ? "" : styles.dayMode}`} id="projects">
         <h2>Select Projects</h2>
         <div>
           <h3>Weather App</h3>
@@ -239,14 +245,14 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href={"/components/Weather"}
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Weather App
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Weather.js"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -256,7 +262,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax2}></div>
       {/* Music Memory */}
-      <div className={styles.testDiv2}>
+      <div className={`${styles.testDiv2} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>Music Memory</h3>
           <div className={styles.projectImgContainer}>
@@ -277,21 +283,21 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href="https://taupe-starship-4cf747.netlify.app/"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Music Memory
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MusicMemoryGame"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
             </Link>
             <Link
               href="https://musicjoeyoung.medium.com/music-memory-game-4238a4bb1c35"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Medium
@@ -301,7 +307,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax2}></div>
       {/* Weather App */}
-      {/*   <div className={styles.testDiv3}>
+      {/*   <div className={`${styles.testDiv3} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>Aether</h3>
           <div className={styles.projectImgContainer}>
@@ -330,7 +336,7 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href="https://github.com/musicjoeyoung/aether"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -341,7 +347,7 @@ const homePage = () => {
 
       {/* <div className={styles.parallax2}></div> */}
       {/* CRUD App */}
-      <div className={styles.testDiv3}>
+      <div className={`${styles.testDiv3} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>CRUD App</h3>
           <div className={styles.projectImgContainer}>
@@ -363,14 +369,14 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href={"https://dapper-licorice-657a3f.netlify.app/"}
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               CRUD App
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MERN"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -380,7 +386,7 @@ const homePage = () => {
       </div>
       <div className={styles.parallax2}></div>
       {/* Seasonle */}
-      <div className={styles.testDiv2}>
+      <div className={`${styles.testDiv2} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>Seasonle</h3>
           <div className={styles.projectImgContainer}>
@@ -399,14 +405,14 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href="https://wonderful-ganache-6ce0a6.netlify.app/"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Seasonle
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/Seasonle-Game"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -417,7 +423,7 @@ const homePage = () => {
       <div className={styles.parallax2}></div>
 
       {/* Countdown Timer */}
-      <div className={styles.testDiv2}>
+      <div className={`${styles.testDiv2} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>Countdown Timer</h3>
           <div className={styles.projectImgContainer}>
@@ -433,14 +439,14 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href="/components/CountdownTimer"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Countdown Timer
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/CountdownTimer.js"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -451,7 +457,7 @@ const homePage = () => {
       <div className={styles.parallax2}></div>
 
       {/* Countdown Timer */}
-      <div className={styles.testDiv2}>
+      <div className={`${styles.testDiv2} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>Countdown Timer</h3>
           <div className={styles.projectImgContainer}>
@@ -467,14 +473,14 @@ const homePage = () => {
           <div className={styles.links}>
             <Link
               href="/components/Calculator"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Calculator
             </Link>
             <Link
               href="https://github.com/musicjoeyoung/MyWebsite/blob/main/pages/components/Calculator.tsx"
-              className={styles.glowOnHover}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
               target="_blank"
             >
               Github
@@ -483,7 +489,7 @@ const homePage = () => {
         </div>
       </div>
       {/* Experience */}
-      <div className={styles.testDiv5} id="experience">
+      <div className={`${styles.testDiv5} ${darkMode ? "" : styles.dayMode}`} id="experience">
         <h2>Relevant Experience</h2>
         <ul className={styles.ul}>
           <li className={styles.li}>
@@ -557,12 +563,12 @@ const homePage = () => {
       <div className={styles.parallax}></div>
 
       {/* Contact */}
-      <div className={styles.testDiv6} id="contact">
-        <Contact />
+      <div className={`${styles.testDiv6} ${darkMode ? "" : styles.dayMode}`} id="contact">
+        <Contact darkMode={darkMode} />
       </div>
 
 
-      <UpArrow />
+      <UpArrow darkMode={darkMode}/>
     </>
   );
 };
