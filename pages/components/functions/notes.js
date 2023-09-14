@@ -1,4 +1,4 @@
-export function generatePianoKeys() {
+/* export function generatePianoKeys() {
   const notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
   const keyboard = [];
 
