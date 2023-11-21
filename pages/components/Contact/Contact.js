@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/contact.module.scss";
+import styles from "./Contact.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ const Contact = () => {
         <h3 /* className={styles.h3} */ className={styles.glowOnHover}>
           <a
             href="mailto:joseph.m.young2@gmail.com"
-            /* className={styles.glowOnHover} */
+          /* className={styles.glowOnHover} */
           >
             Reach out to say hello!
           </a>
@@ -26,7 +26,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/joseph-m-young/"
             target="_blank"
             rel="noreferrer"
-            /* className={styles.glowOnHover} */
+          /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}
@@ -40,7 +40,7 @@ const Contact = () => {
             href="https://github.com/musicjoeyoung"
             target="_blank"
             rel="noreferrer"
-            /* className={styles.glowOnHover} */
+          /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}
@@ -52,7 +52,7 @@ const Contact = () => {
           </a>
           <a
             href="mailto:joseph.m.young2@gmail.com"
-            /* className={styles.glowOnHover} */
+          /* className={styles.glowOnHover} */
           >
             <Image
               className={styles.icon}

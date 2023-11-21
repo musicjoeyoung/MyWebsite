@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "styles/calculator.module.css";
+import styles from "./Calculator.module.css";
 
 const Calculator = () => {
   return (

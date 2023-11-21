@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "styles/upArrow.module.css";
+import styles from "./UpArrow.module.css";
 import Image from "next/image";
 
 const UpArrow = () => {

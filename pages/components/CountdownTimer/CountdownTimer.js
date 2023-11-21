@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "styles/countdowntimer.module.scss";
+import styles from "./CountdownTimer.module.scss";
 
 function CountdownTimer() {
   const [timer, setTimer] = useState(0);

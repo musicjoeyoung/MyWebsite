@@ -5,12 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 let words = [
-    " fullstack software engineer",
-    " Javascript, jQuery, CSS, HTML",
-    " pretty cool guy",
-    /*  " musician, composer, performer",
-    " pretty cool guy", */
-  ],
+  " fullstack software engineer",
+  " Javascript, jQuery, CSS, HTML",
+  " pretty cool guy",
+  /*  " musician, composer, performer",
+  " pretty cool guy", */
+],
   part,
   i = 0,
   offset = 0,

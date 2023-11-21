@@ -1,0 +1,46 @@
+.testDiv4,
+.testDiv2,
+.testDiv3 {
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #073b4c;
+    color: white;
+    padding: 75px;
+    box-shadow: 0 0 2rem -0.5rem #000000;
+    scroll-margin-top: 80px;
+}
+
+.projectImg {
+    width: 65%;
+    height: 100%;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.projectImgContainer {
+    text-align: center;
+}
+
+.parallax2 {
+    background-image: url("/images/background3.jpg");
+    min-height: 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.links .glowOnHover {
+    font-size: 19px;
+}
+.li:nth-child(5) a {
+    color: #50f9f9;
+}
+.links .glowOnHover {
+    height: 30px;
+    padding: 3px;
+}
