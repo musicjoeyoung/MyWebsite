@@ -68,7 +68,7 @@ const HomePage = () => {
           </div>
         </nav>
         <HamburgerMenu />
-        <Image src="/images/day-and-night.png" alt="icon" width={30} height={30} className={styles.nightDayIcon} onClick={() => setDarkMode(!darkMode)}/>
+        <Image src="/images/day-and-night.png" alt="icon" width={30} height={30} className={styles.nightDayIcon} onClick={() => setDarkMode(!darkMode)} />
       </header>
       <div className={`${styles.main} ${darkMode ? "" : styles.dayMode}`}>
         {/* <h2 className={styles.welcome}>Hello, my name is </h2> */}
@@ -109,7 +109,7 @@ const HomePage = () => {
               Fun Fact: I am also in the Army Reserves where I am an Executive
               Officer for a military band, and we play lots of wonderful music!
             </p>
-            <div className={styles.iconContainer }>
+            <div className={styles.iconContainer}>
               <Image
                 className={styles.icon}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -228,6 +228,39 @@ const HomePage = () => {
       <div className={`${styles.testDiv4} ${darkMode ? "" : styles.dayMode}`} id="projects">
         <h2>Select Projects</h2>
         <div>
+          <h3>CodeCards</h3>
+          <div className={styles.projectImgContainer}>
+            <Image
+              className={styles.projectImg}
+              src="/images/CodeCards.png"
+              alt="Picture of the project"
+              width={500}
+              height={500}
+            />
+          </div>
+          <p>
+            A flashcard study tool for learning JavaScript!
+          </p>
+          <div className={styles.links}>
+            <Link
+              href={"https://sensational-pegasus-16a760.netlify.app/"}
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
+              target="_blank"
+            >
+              CodeCards
+            </Link>
+            <Link
+              href="https://github.com/musicjoeyoung/Flashcards"
+              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.testDiv4} ${darkMode ? "" : styles.dayMode}`} id="projects">
+        <div>
           <h3>Weather App</h3>
           <div className={styles.projectImgContainer}>
             <Image
@@ -307,43 +340,7 @@ const HomePage = () => {
       </div>
       <div className={styles.parallax2}></div>
       {/* Weather App */}
-      {/*   <div className={`${styles.testDiv3} ${darkMode ? "" : styles.dayMode}`}>
-        <div>
-          <h3>Aether</h3>
-          <div className={styles.projectImgContainer}>
-            <Image
-              className={styles.projectImg}
-              src="/images/Aether.png"
-              alt="Picture of the project"
-              width={500}
-              height={500}
-            />
-          </div>
-          <p>
-            Built as a final capstone project at the Fullstack Academy, this is
-            an audio-visual music collaboration experience. Our goal was to
-            create a loosely structured audio visual “jam” space for users to
-            compose and visualize music with a variety of instruments
-            collaboratively in a live session. When collaborative art cannot be
-            made in-person, this application can bring people together in a
-            creative environment. This space serves as a tool to make music in a
-            live 3-D session.
-            <br />
-            <br />
-            Tech used: Three.js, Tone.js, Socket.io, Firebase/Firestore, React,
-            Redux, Express, Framer/Framer-Motion
-          </p>
-          <div className={styles.links}>
-            <Link
-              href="https://github.com/musicjoeyoung/aether"
-              className={`${styles.glowOnHover} ${darkMode ? "" : styles.dayMode}`}
-              target="_blank"
-            >
-              Github
-            </Link>
-          </div>
-        </div>
-      </div> */}
+
 
       {/* <div className={styles.parallax2}></div> */}
       {/* CRUD App */}
@@ -568,7 +565,7 @@ const HomePage = () => {
       </div>
 
 
-      <UpArrow darkMode={darkMode}/>
+      <UpArrow darkMode={darkMode} />
     </>
   );
 };
