@@ -239,7 +239,7 @@ const HomePage = () => {
             />
           </div>
           <p>
-            A flashcard study tool for learning JavaScript! This is a fullstack application with using a MySQL database.
+            A flashcard study tool for learning JavaScript! This is a fullstack application using a MySQL database.
           </p>
           <div className={styles.links}>
             <Link
