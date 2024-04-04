@@ -490,7 +490,7 @@ const HomePage = () => {
         <h2>Relevant Experience</h2>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            Associate Educator, Software Engineering - BrainStation - New York,
+            Educator, Software Engineering - BrainStation - New York,
             NY - March 2023 - current
             <ul>
               <li>
@@ -502,6 +502,18 @@ const HomePage = () => {
               <li>
                 Works on writing and researching new content to teach the most
                 up-to-date skills in development to students.
+              </li>
+            </ul>
+          </li>
+          <li className={styles.li}>
+            Associate Educator, Software Engineering - BrainStation - New York,
+            NY - March 2023 - current
+            <ul>
+              <li>
+                Delivers lectures and mentors the next wave of engineering
+                talent by providing expert technical guidance to students who
+                are building exciting projects using the most cutting-edge
+                technologies.
               </li>
             </ul>
           </li>
