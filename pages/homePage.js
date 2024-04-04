@@ -96,8 +96,8 @@ const HomePage = () => {
             <p className={styles.bioP}>
               I am a software engineer with multiple years of experience coding,
               debugging, testing, and troubleshooting in application development
-              processes. I work primarily in Javascript with HTML, CSS, React,
-              Redux, Node, Express, PostgreSQL, and have a special interest in
+              processes. I work primarily in Javascript with HTML, CSS, SASS, React,
+              Redux, Node, Express, PostgreSQL, MySQL and have a special interest in
               Web Accessibility.
               <br />
               <br />I design, build, and manage websites for a number of
@@ -239,7 +239,7 @@ const HomePage = () => {
             />
           </div>
           <p>
-            A flashcard study tool for learning JavaScript!
+            A flashcard study tool for learning JavaScript! This is a fullstack application with using a MySQL database.
           </p>
           <div className={styles.links}>
             <Link
