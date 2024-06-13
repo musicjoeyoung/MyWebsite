@@ -8,7 +8,6 @@ import Hero from "./components/Hero/Hero.js";
 import Bio from "./components/Bio/Bio.js";
 import Projects from "./components/Projects/Projects.js";
 import Experience from "./components/Experience/Experience.js";
-//import Calculator from "./components/calculator/Calculator";
 
 const homePage = () => {
   return (
