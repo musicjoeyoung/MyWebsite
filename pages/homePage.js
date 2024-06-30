@@ -344,7 +344,7 @@ const HomePage = () => {
 
       {/* <div className={styles.parallax2}></div> */}
       {/* CRUD App */}
-      <div className={`${styles.testDiv3} ${darkMode ? "" : styles.dayMode}`}>
+      {/*  <div className={`${styles.testDiv3} ${darkMode ? "" : styles.dayMode}`}>
         <div>
           <h3>CRUD App</h3>
           <div className={styles.projectImgContainer}>
@@ -380,7 +380,7 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles.parallax2}></div>
       {/* Seasonle */}
       <div className={`${styles.testDiv2} ${darkMode ? "" : styles.dayMode}`}>
